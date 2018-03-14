@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/customFitFunctions.js"></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div id="info">
+        <p>Select Routine</p>
+      </div>
+    </div>
+
+    <!--RADIAL MENU-->
+    <!--Fixed Container-->
+    <div id="fixIt">
+      <!--Adaptive Container-->
+      <div class="square">
+        <div class="container containerDown">
+          <div id="fab" class="dot dotDown">
+            <div id=plusContain class="fab rotate">
+              <div id="plus">+</div>
+            </div>
+          </div>
+        </div>
+        <!--Radial Buttons-->
+        <div id="chest" class="tab bigOne">
+          <a href="exercises.html" class="iconButton" style="top: -5%;">
+            <img class="workIcon" src="images/thorso.png" width="70%" alt="" />
+          </a>
+        </div>
+        <div id="stretch" class="tab bigTwo">
+          <a href="#" class="iconButton">
+            <img class="workIcon" src="images/stretch.png" width="86%" alt="" />
+          </a>
+        </div>
+        <div id="cardio" class="tab bigThree">
+          <a href="#" class="iconButton">
+            <img class="workIcon" src="images/cardio.png" width="70%" alt="" />
+          </a>
+        </div>
+        <div id="legs" class="tab bigFour">
+          <a href="#" class="iconButton" style="top: -6%;">
+            <img class="workIcon" src="images/legs.png" width="40%" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--ROUTINE CARDS-->
+    <ul id="cardList" class="cards">
+      <li>
+        <div class="card">
+          <div class="cardInfo">
+            <a class="startIt" href="timer.html">
+              <!--Written Info-->
+              <h3>Full Body create asshole face goon mc chieftan face sauce</h3>
+              <p>10 min.</p>
+              <!--Icons-->
+              <div class="infoIcons">
+                <img src="images/thorso.png" width="30" alt="" />
+                <img src="images/legs.png" width="18" alt="" />
+                <img src="images/cardio.png" width="30" alt="" />
+              </div>
+            </a>
+          </div>
+          <!--Options-->
+          <a href="overview.html">
+            <div class="cardOptions">
+              <img src="images/options.png" width="30" alt="" />
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="card">
+          <div class="cardInfo">
+            <a class="startIt" href="timer.html">
+              <!--Written Info-->
+              <h3>God Legs</h3>
+              <p>30 min.</p>
+              <!--Icons-->
+              <div class="infoIcons">
+                <img src="images/legs.png" width="18" alt="" />
+                <img src="images/cardio.png" width="30" alt="" />
+              </div>
+            </a>
+          </div>
+          <!--Options-->
+          <a class="theOption" href="overview.html">
+            <div id="options">
+              <img src="images/options.png" width="30" alt="" />
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="card">
+          <div class="cardInfo">
+            <a class="startIt" href="timer.html">
+              <!--Written Info-->
+              <h3>Morning Stretch</h3>
+              <p>5 min.</p>
+              <!--Icons-->
+              <div class="infoIcons">
+                <img src="images/stretch.png" width="45" alt="" />
+              </div>
+            </div>
+          </a>
+          <!--Options-->
+          <a class="theOption" href="overview.html">
+            <div id="options">
+              <img src="images/options.png" width="30" alt="" />
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="card">
+          <div class="cardInfo">
+            <a class="startIt" href="timer.html">
+              <!--Written Info-->
+              <h3>Cardio Burst</h3>
+              <p>15 min.</p>
+              <!--Icons-->
+              <div class="infoIcons">
+                <img src="images/thorso.png" width="30" alt="" />
+                <img src="images/legs.png" width="18" alt="" />
+                <img src="images/cardio.png" width="30" alt="" />
+              </div>
+            </a>
+          </div>
+          <!--Options-->
+          <a class="theOption" href="overview.html">
+            <div id="options">
+              <img src="images/options.png" width="30" alt="" />
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <li>
+        <div class="card">
+          <div class="cardInfo">
+            <a class="startIt" href="timer.html">
+              <!--Written Info-->
+              <h3>Muay thai Warmup</h3>
+              <p>10 min.</p>
+              <!--Icons-->
+              <div class="infoIcons">
+                <img src="images/thorso.png" width="30" alt="" />
+                <img src="images/legs.png" width="18" alt="" />
+                <img src="images/cardio.png" width="30" alt="" />
+                <img src="images/stretch.png" width="45" alt="" />
+              </div>
+            </a>
+          </div>
+          <!--Options-->
+          <a class="theOption" href="overview.html">
+            <div id="options">
+              <img src="images/options.png" width="30" alt="" />
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <!--Leave Space at end of List-->
+      <li>
+        <div id="holder"></div>
+      </li>
+    </ul>
+
+    <!--DELETE ROUTINE DIALOGUE-->
+    <div id="deleteRoutine">
+      <h3>DELETE THIS ROUTINE?</h3>
+      <!--Delete Button-->
+      <div id="confirmDelete">
+        <img src="images/whiteTickUp.png" width="120" alt=""/>
+        <img src="images/whiteTickDown.png" width="105" alt=""/>
+      </div>
+      <!--Cancel Button-->
+      <div id="cancelDelete">
+        <img src="images/whiteXUp.png" width="110" alt=""/>
+        <img src="images/whiteXDown.png" width="95" alt=""/>
+      </div>
+    </div>
+
+    <!--Back Button
+    <div class="backButton">
+      <a href="index.html">
+        <img src="images/backButtonUp.png" width="100" alt=""/>
+        <img src="images/backButtonDown.png" width="85" alt=""/>
+      </a>
+    </div>-->
+
+    <!--MENU OVERLAY-->
+    <div id="overlay" class="block"></div>
+
+    <!--FOOTER-->
+    <div class="footer">
+      <!--RADIAL NAV MENU-->
+      <div id="navContainer">
+        <!--Buttons-->
+        <div id="workouts" class="sml smlOne">
+          <div class="testOne">
+            <a id="navOne" href="routines.html">
+              <img id="grayOne" class="in" src="images/workoutsGray.png" width="33" alt="" />
+              <img id="whiteOne" class="out" src="images/workoutsWhite.png" width="36" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="home" class="sml smlTwo">
+          <div class="testTwo">
+            <a id="navTwo" href="index.html">
+              <img id="grayTwo" class="in" src="images/homeGray.png" width="36" alt="" />
+              <img id="whiteTwo" class="out" src="images/homeWhite.png" width="38" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="profile" class="sml smlThree">
+            <div class="testThree">
+              <a id="navThree" href="profile.html">
+                <img id="grayThree" class="in" src="images/profileGray.png" width="38" alt="" />
+                <img id="whiteThree" class="out" src="images/profileWhite.png" width="41" alt="" />
+              </a>
+            </div>
+        </div>
+        <!--Burger-->
+        <div id="burger" class="burgerMenu">
+          <div id="top" class="bar barTop"></div>
+          <div id="middle" class="bar barMid"></div>
+          <div id="bottom" class="bar barBot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--IF PHONE IS HORIZONTAL-->
+    <div id="warning">
+      <div class="imageSpinner">
+        <img src="images/rotate.png" align="middle" />
+      </div>
+    </div>
+
+  </body>
+</html>

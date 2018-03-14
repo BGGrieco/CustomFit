@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CustomFit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="docs/manifest.json">
+    <link rel="icon" sizes="192x192" href="launchIcon.png">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" src="js/customFitFunctions.js"></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div>
+        <p>Home</p>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+      <!--RADIAL NAV MENU-->
+      <div id="navContainer">
+        <!--Buttons-->
+        <div id="workouts" class="sml smlOne">
+          <div class="testOne">
+            <a id="navOne" href="routines.html">
+              <img id="grayOne" class="in" src="images/workoutsGray.png" width="25" alt="" />
+              <img id="whiteOne" class="out" src="images/workoutsWhite.png" width="30" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="home" class="sml smlTwo">
+          <div class="testTwo">
+            <a id="navTwo" href="index.html">
+              <img id="grayTwo" class="in" src="images/homeGray.png" width="21" alt="" />
+              <img id="whiteTwo" class="out" src="images/homeWhite.png" width="28" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="profile" class="sml smlThree">
+            <div class="testThree">
+              <a id="navThree" href="profile.html">
+                <img id="grayThree" class="in" src="images/profileGray.png" width="23" alt="" />
+                <img id="whiteThree" class="out" src="images/profileWhite.png" width="28" alt="" />
+              </a>
+            </div>
+        </div>
+        <!--Interaction menu-->
+        <div id="burger" class="burgerMenu">
+          <div id="circle" class="tap tapOn"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    $(".burgerMenu").mousedown(function()
+    {
+      $(".smlOne").toggleClass("smlOnOne");
+      $(".smlTwo").toggleClass("smlOnTwo");
+      $(".smlThree").toggleClass("smlOnThree");
+    });
+
+    $(".burgerMenu").mouseup(function()
+    {
+      $(".smlOne").removeClass("smlOnOne");
+      $(".smlTwo").removeClass("smlOnTwo");
+      $(".smlThree").removeClass("smlOnThree");
+    });
+
+    $("#testTwo").mouseup(function()
+    {
+      console.log("mouse up");
+    });
+    /*var menu = document.getElementById("navContainer");
+    var smashIt = new Hammer(menu);
+    smashIt.get("press").set({threshold: 100});
+    smashIt.on("press", function()
+    {
+      //modifyOverlay(3);
+      $(".barTop").toggleClass("barTopOn");
+      $(".barMid").toggleClass("barMidOn");
+      $(".barBot").toggleClass("barBotOn");
+      $(".smlOne").toggleClass("smlOnOne");
+      $(".smlTwo").toggleClass("smlOnTwo");
+      $(".smlThree").toggleClass("smlOnThree");
+    });
+
+    var w = document.getElementById("workouts");
+    var h = document.getElementById("home");
+    var p = document.getElementById("profile");
+    var leaveIt = new Hammer(w, h, p);
+    leaveIt.on("pressup", function()
+    {
+      //modifyOverlay(3);
+      $(".barTop").toggleClass("barTopOn");
+      $(".barMid").toggleClass("barMidOn");
+      $(".barBot").toggleClass("barBotOn");
+      $(".smlOne").toggleClass("smlOnOne");
+      $(".smlTwo").toggleClass("smlOnTwo");
+      $(".smlThree").toggleClass("smlOnThree");
+    });
+
+    //$("#testThree").mouseup(function()
+    //{
+    //  window.location.replace("profile.html");
+    //});*/
+    </script>
+  </body>
+</html>

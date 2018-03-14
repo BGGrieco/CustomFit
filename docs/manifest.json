@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"...>
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+</manifest>
+
+{
+  "name": "CustomFit",
+  "version": "3.0",
+  "manifest_version": "1",
+  "description": "Create new workout routines, customize existing ones, workout to
+  a guided timer and track your cardio/strength progress. Choose from a plethora of
+  simple free-body exercises, covering upper/lower body strength, cardio and stretching!",
+  "icon": "buttonLogo.png",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

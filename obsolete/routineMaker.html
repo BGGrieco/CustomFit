@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <link rel="stylesheet" href="rangeslider/rangeslider.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="rangeslider/rangeslider.min.js"></script>
+    <script type="text/javascript" src="js/customFitFunctions.js"></script>
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div id="info">
+        <p>Push Ups</p>
+      </div>
+    </div>
+
+    <!--SPECIFY TIMING FOR EXERCISES-->
+    <div id="containSliders">
+      <!--Exercise time allocator-->
+      <div id="containSliderOne">
+        <p>Time:</p>
+        <output id="timeValue">60 sec.</output>
+        <input type="range" id="determineTime" step="10" value="60" min="0" max="180" />
+      </div>
+      <!--Exercise time allocator-->
+      <div id="containSliderTwo">
+        <p>Rest Time:</p>
+        <output id="restValue">10 sec.</output>
+        <input type="range" id="determineRest" step="10" value="10" min="0" max="180" />
+      </div>
+      <!--Add rest button-->
+      <div id="addBreak"><p>Add Break</p></div>
+      <!--Back Button-->
+      <div id="cancel">
+        <a id="exerciseCancel" href="exercises.html">
+          <img src="images/backButtonUp.png" width="100" alt=""/>
+          <img src="images/backButtonDown.png" width="85" alt=""/>
+        </a>
+      </div>
+      <!--Confirm Button-->
+      <div id="confirm">
+        <a id="exerciseConfirm" href="routineOverview.html">
+          <img src="images/whiteTickUp.png" width="95" alt=""/>
+          <img src="images/whiteTickDown.png" width="80" alt=""/>
+        </a>
+      </div>
+    </div>
+
+    <!--MENU OVERLAY-->
+    <div id="overlay" class="block"></div>
+
+    <!--FOOTER-->
+    <div class="footer">
+      <!--RADIAL NAV MENU-->
+      <div id="navContainer">
+        <!--Buttons-->
+        <div id="workouts" class="sml smlOne">
+          <div class="testOne">
+            <a id="navOne" href="routines.html">
+              <img id="grayOne" class="in" src="images/workoutsGray.png" width="33" alt="" />
+              <img id="whiteOne" class="out" src="images/workoutsWhite.png" width="36" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="home" class="sml smlTwo">
+          <div class="testTwo">
+            <a id="navTwo" href="index.html">
+              <img id="grayTwo" class="in" src="images/homeGray.png" width="36" alt="" />
+              <img id="whiteTwo" class="out" src="images/homeWhite.png" width="38" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="profile" class="sml smlThree">
+            <div class="testThree">
+              <a id="navThree" href="profile.html">
+                <img id="grayThree" class="in" src="images/profileGray.png" width="38" alt="" />
+                <img id="whiteThree" class="out" src="images/profileWhite.png" width="41" alt="" />
+              </a>
+            </div>
+        </div>
+        <!--Burger-->
+        <div id="burger" class="burgerMenu">
+          <div id="top" class="bar barTop"></div>
+          <div id="middle" class="bar barMid"></div>
+          <div id="bottom" class="bar barBot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--IF PHONE IS HORIZONTAL-->
+    <div id="warning">
+      <div class="imageSpinner">
+        <img src="images/rotate.png" align="middle" />
+      </div>
+    </div>
+
+  </body>
+</html>

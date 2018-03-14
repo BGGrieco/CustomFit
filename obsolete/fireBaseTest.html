@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="js/customFitFunctions.js"></script>-->
+  </head>
+  <body>
+
+    <ul id="cardList" class="cards"></ul>
+
+    <button id="face">HIT IT</button>
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script>
+    // Configure Firebase.
+    var config =
+    {
+      apiKey: "AIzaSyCogF5kaBbbs-2ME020FoTMd17_2ylydq4",
+      authDomain: "customfit-5281b.firebaseapp.com",
+      databaseURL: "https://customfit-5281b.firebaseio.com",
+      projectId: "customfit-5281b",
+      storageBucket: "customfit-5281b.appspot.com",
+      messagingSenderId: "789910251533"
+    };
+    // Initialize firebase.
+    firebase.initializeApp(config);
+
+    var display = document.getElementById("cardList");
+    var dbRef = firebase.database().ref().child("workouts");
+
+    // Sync with Firebase in real time.
+    dbRef.on("value", snap =>
+    {
+      var workouts = snap.val();
+
+      // log the right object on click
+      function handleButtonClick(event)
+      {
+        if (event.target != event.currentTarget)
+        {
+          //console.log(workouts.find(workout => workout.title === event.currentTarget.dataset.workout));
+          var obj = (workouts.find(workout => workout.title === event.currentTarget.dataset.workout));
+          var values = JSON.stringify(obj);
+          localStorage.workout = values;
+        }
+      }
+
+      function appendElement(htmlString, parentQuery)
+      {
+        $(parentQuery).append(htmlString)
+      }
+
+      function createCardsHtmlString(id, routine)
+      {
+        return `
+        <li>
+          <div class="card" id="${id}" data-workout="${routine}">
+            <a class="startIt" href="timer.html">
+              <div class="cardInfo">
+                <h3>${routine}</h3>
+                <p>10 min.</p>
+                <div class="infoIcons">${icons}</div>
+                </div>
+              </a>
+              <a class="cardOptions" href="overview.html">
+                <div id="options">
+                  <img src="images/options.png" width="30" alt="" />
+                </div>
+              </a>
+            </div>
+          </li>
+        `
+      }
+
+      for (var i = 0; i < workouts.length; i++)
+      {
+        var routine = workouts[i].title;
+        var exercises = workouts[i].exercises;
+        var id = "card" + i;
+        var icons;
+        if (routine == "God Legs")
+        {
+          icons = "<img src='images/legs.png' width='18' alt='' /><img src='images/cardio.png' width='30' alt='' />"
+        }
+        else if (routine == "Morning Stretch")
+        {
+          icons = "<img src='images/stretch.png' width='50' alt='' />"
+        }
+        else if (routine == "Cardio Burst")
+        {
+          icons = "<img src='images/cardio.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' />"
+        }
+        else
+        {
+          icons = "<img src='images/thorso.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' /><img src='images/cardio.png' width='30' alt='' /><img src='images/stretch.png' width='50' alt='' />"
+        }
+
+        $("#cardList").append(createCardsHtmlString(id, routine));
+      }
+
+      $(".card").on("click", handleButtonClick);
+
+      $("#face").click(function()
+      {
+        //firebase.database().ref().child("workouts");
+        dbRef.push("New Routine").set("face"); //create new routine
+      });
+
+      /*for (var i = 0;  i < workouts.length; i++)
+      {
+        //display.append(i + workouts[i].title);
+        var routine = workouts[i].title;
+
+        var $card = ("<li><div class='card'><a class='startIt' href='timer.html'>\n\
+        <div class='cardInfo'><h3>" + routine + "</h3><p>10 min.</p>\n\
+        <div class='infoIcons'></div></div></a><a class='cardOptions' href='overview.html'>\n\
+        <div id='options'><img src='images/options.png' width='30' alt='' /></div></a></div></li>");
+
+        $("#cardList").append($card);
+      }
+
+      // Get content of exercises array.
+      $("#cardList").on("click", ".card", (event) =>
+      {
+        if (event.target != event.currentTarget)
+        {
+          //console.log(workouts.find(workout => workout.title === event.target.textContent));
+          var obj = (workouts.find(workout => workout.title === event.target.textContent));
+          var values = JSON.stringify(obj);
+          localStorage.workout = values;
+        }
+      });*/
+    });
+    </script>
+
+  </body>
+</html>

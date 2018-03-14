@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <link rel="stylesheet" href="css/rangeslider.css" type="text/css">
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div id="info">
+        <p>Select Exercise</p>
+      </div>
+    </div>
+
+    <!--EXERCISE LIST-->
+    <div id="exerciseContainer">
+      <div class="exerciseL exercise">
+        <img src="images/pushUps.png" width="110" alt="" />
+        <div class="h3Container">
+          <h3>Push Ups</h3>
+        </div>
+      </div>
+
+      <div class="exerciseR exercise">
+        <img src="images/plank.png" width="110" alt="" />
+        <div class="h3Container">
+          <h3>Plank</h3>
+        </div>
+      </div>
+
+      <div class="exerciseL exercise">
+        <img src="images/sitUps.png" width="90" style="top: 25px;" alt="" />
+        <div class="h3Container">
+          <h3>Sit Ups</h3>
+        </div>
+      </div>
+
+      <div class="exerciseR exercise">
+        <img src="images/legUps.png" width="90" style="top: 15px;" alt="" />
+        <div class="h3Container">
+          <h3>Leg Ups</h3>
+        </div>
+      </div>
+
+      <div class="exerciseL exercise">
+        <img src="images/twists.png" width="110" style="top: 25px;" alt="" />
+        <div class="h3Container">
+          <h3>Russian Twists</h3>
+        </div>
+      </div>
+
+      <div class="exerciseR exercise">
+        <img src="images/backRaises.png" width="115" alt="" />
+        <div class="h3Container">
+          <h3>Back Raises</h3>
+        </div>
+      </div>
+      <div class="exerciseL exercise">
+        <img src="images/burpee.png" width="80" style="top: 20px;" alt="" />
+        <div class="h3Container">
+          <h3>Burpees</h3>
+        </div>
+      </div>
+      <div class="exerciseR exercise">
+        <img src="images/climber.png" width="110" alt="" />
+        <div class="h3Container">
+          <h3>Mountain Climbers</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--SPECIFY TIMING FOR EXERCISES-->
+    <div id="specifier">
+      <p id="infoP"></p>
+      <div id="containSliders">
+        <!--Exercise time allocator-->
+        <output id="timeValue">30 sec.</output>
+        <div id="containSliderOne">
+          <p>Exercise Time:</p>
+          <input type="range" id="determineTime" step="10" value="30" min="0" max="180" />
+        </div>
+        <!--Exercise time allocator-->
+        <div id="containSliderTwo">
+          <p>Rest Time:</p>
+          <output id="restValue">10 sec.</output>
+          <input type="range" id="determineRest" step="10" value="10" min="0" max="180" />
+        </div>
+        <!--Back Button-->
+        <div id="cancel">
+          <a id="exerciseCancel" href="#">
+            <img src="images/back.png" width="40" alt="" />
+          </a>
+        </div>
+        <!--Confirm Button-->
+        <div id="confirm">
+          <a id="newExerciseConfirm" href="newOverview.html">
+            <img src="images/tick.png" width="45" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Back Button-->
+    <div id="activator" class="backButton">
+      <a href="javascript:history.back()">
+        <img src="images/back.png" width="35" alt="" />
+      </a>
+    </div>
+
+    <!--MENU OVERLAY-->
+    <div id="overlay" class="block"></div>
+
+    <!--FOOTER-->
+    <div class="footer">
+      <!--RADIAL NAV MENU-->
+      <div id="navContainer">
+        <!--Buttons-->
+        <div id="workouts" class="sml smlOne">
+          <div class="testOne">
+            <a id="navOne" href="routines.html">
+              <img id="grayOne" class="in" src="images/workoutsGray.png" width="26" alt="" />
+              <img id="whiteOne" class="out" src="images/workoutsWhite.png" width="30" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="home" class="sml smlTwo">
+          <div class="testTwo">
+            <a id="navTwo" href="index.html">
+              <img id="grayTwo" class="in" src="images/homeGray.png" width="21" alt="" />
+              <img id="whiteTwo" class="out" src="images/homeWhite.png" width="28" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="profile" class="sml smlThree">
+            <div class="testThree">
+              <a id="navThree" href="profile.html">
+                <img id="grayThree" class="in" src="images/profileGray.png" width="23" alt="" />
+                <img id="whiteThree" class="out" src="images/profileWhite.png" width="28" alt="" />
+              </a>
+            </div>
+        </div>
+        <!--Interaction menu-->
+        <div id="burger" class="burgerMenu">
+          <div id="circle" class="tap tapOn"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--IF PHONE IS HORIZONTAL-->
+    <div id="warning">
+      <div class="imageSpinner">
+        <img src="images/rotate.png" />
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script type="text/javascript" src="js/createNewFunctions.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="js/rangesliderFunctions.js"></script>
+    <script type="text/javascript" src="js/customFitFunctions.js"></script>
+  </body>
+</html>
