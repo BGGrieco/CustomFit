@@ -1,0 +1,100 @@
+/* 
+    Created on : 26-Mar-2017, 23:46:04
+    Author     : Brian
+*/
+.header
+{
+    height: 60px;
+}
+
+.header h1 img
+{
+    width: 40px;
+}
+
+.header a img
+{
+    width: 30px;
+    padding-top: 12px;
+}
+
+.ui-content h1
+{
+    text-align: center;   
+}
+
+.ui-content li
+{
+    display: inline-block;
+    text-decoration: none;   
+}
+
+.ui-btn
+{
+    background-color: transparent;
+}
+
+.routineOptions li
+{
+    display: inline-block;
+    text-decoration: none;   
+}
+
+.menuContent
+{
+    padding-left: 10px;
+}
+
+/*Burger Menu*/
+#navProf
+{
+    position: relative;
+    left: 140px;
+    top: 150px;
+}
+
+#navHome
+{
+    position: absolute;
+    padding: 100px 0px 0px 70px;
+}
+
+#navIcon
+{
+    position: absolute;
+    padding-top: 150px;
+}
+
+#burgerMenu
+{
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+}
+
+#burger
+{
+    width: 50px;
+}
+
+.goBack
+{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+}
+
+#homeContent h1
+{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#playIcon
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
