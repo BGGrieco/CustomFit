@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-packageName="[ANDROID-BUNDLE-ID]" ios-CFBundleIdentifier="[IOS-BUNDLE-ID]" version="[APP-VERSION]">
-    <author email="info@megsupporttools.com" href="http://www.megsupporttools.com">
+    <author email="brian.g.grieco@gmail.com.com">
         MEDICAL EGUIDES
     </author>
     <content src="index.html" />
@@ -32,14 +32,6 @@
         <preference name="DisallowOverscroll" value="true" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <variable name="CAMERA_USAGE_DESCRIPTION" value="App would like to access your camera to enable you to take photographs of issues while auditing." />
-        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App would like to access device photographs while auditing." />
     </platform>
     <engine name="ios" spec="~4.2.1" />
-    <plugin name="cordova-plugin-email-composer" spec="~0.8.3" />
-    <plugin name="cordova-plugin-whitelist" spec="1" />
-    <plugin name="cordova-plugin-device" spec="~1.1.2" />
-    <plugin name="cordova-plugin-camera" spec="~2.4.1" />
-    <plugin name="cordova-custom-config" spec="~2.0.3" />
 </widget>
-
