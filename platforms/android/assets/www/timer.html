@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <link rel="stylesheet" href="css/rangeslider.css" type="text/css">
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <p id="info"></p>
+    </div>
+
+    <audio controls id="player" style="display: none">
+      <source id="player-src" src="#">
+    </audio>
+
+    <!--GET READY-->
+    <div class="getReady">
+      <h1>READY?</h1>
+      <div id="readyCount"></div>
+    </div>
+
+    <div id="containTimer">
+      <div id="exerciseLabel"></div>
+      <div id="timerImage">
+        <img src="images/break.png" width="130" alt="" />
+      </div>
+      <!--<div id="exerciseImage">
+        <img src="images/pushUps.png" width="200" alt="" />
+      </div>-->
+      <div id="counterWrapper">
+        <div id="exerciseCounter"></div>
+      </div>
+      <div id="pauseButton" class="pauser" onclick="pauseOrResume()">
+        <img src="images/pause.png" width="50" alt="" />
+      </div>
+    </div>
+
+    <!--Mute Button-->
+    <div id="muteIt">
+      <img src="images/mute.png" name="pic" width="37" alt=""/>
+    </div>
+
+    <!--Back Button-->
+    <div class="backButton">
+      <a href="javascript:history.back()">
+        <img src="images/back.png" width="35" alt=""/>
+      </a>
+    </div>
+
+    <!--Skip Button-->
+    <div id="skipIt">
+      <a href="index.html">
+        <img src="images/skip.png" width="32" alt=""/>
+      </a>
+    </div>
+
+    <!--PAUSE SCREEN-->
+    <div id="containPauseScreen">
+      <h1>PAUSED</h1>
+      <!--Modify Routine-->
+      <div id="changeItContainer">
+        <a id="changeIt" href="existingOverview.html">
+          <img src="images/cogGray.png" width="32" alt="" />
+        </a>
+      </div>
+      <!--Resume Routine-->
+      <div id="resumeItContainer">
+        <div id="resumeIt" class="pauser">
+          <img src="images/play.png" width="52" alt="" />
+        </div>
+      </div>
+      <!--Skip Routine-->
+      <div id="finishItContainer">
+        <a id="finishIt" href="routines.html">
+          <img src="images/skip.png" width="32" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!--FEEDBACK SCREEN-->
+    <div id="feedbackScreen">
+      <h1>WELL DONE!</h1>
+      <p>How was this routine?</p>
+      <div id="feedbackSliderContainer">
+        <!--Strength Feedback-->
+        <output id="feedbackOne">Just right</output>
+        <div id="feedbackFirst">
+          <input type="range" id="feedBackSliderOne" class="ranger" min="0" value="2" max="4" />
+          <div class="easy">EASY</div>
+          <div class="hard">HARD</div>
+        </div>
+        <!--Cardio Feedback-->
+        <output id="feedbackTwo">Just right</output>
+        <div id="feedbackSecond">
+          <input type="range" id="feedBackSliderTwo" class="ranger" min="0" value="2" max="4" />
+          <div class="easy">TOO<br />SLOW</div>
+          <div class="hard" style="top: -35px;">TOO <br />FAST</div>
+        </div>
+        <!--Replay Button-->
+        <div id="replayWorkout">
+          <a href="#" onClick="window.location.reload()">
+            <img src="images/replay.png" width="25" alt="" />
+          </a>
+        </div>
+        <!--Submit Button-->
+        <div id="submitFeedback">
+          <a id="feedbackConfirm" href="index.html">
+            <img src="images/tick.png" width="60" alt="" />
+          </a>
+        </div>
+        <!--Skip Button-->
+        <div id="skipFeedback">
+          <a href="index.html">
+            <img src="images/skip.png" width="30" alt=""/>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--MENU OVERLAY-->
+    <div id="overlay" class="block"></div>
+
+    <!--IF PHONE IS HORIZONTAL-->
+    <div id="warning">
+      <div class="imageSpinner">
+        <img src="images/rotate.png" align="middle" />
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script type="text/javascript" src="js/databaseFunctions.js"></script>
+    <script type="text/javascript" src="js/timerFunctions.js"></script>
+    <script type="text/javascript" src="js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="js/rangesliderFunctions.js"></script>
+    <script type="text/javascript" src="js/customFitFunctions.js"></script>
+  </body>
+</html>
