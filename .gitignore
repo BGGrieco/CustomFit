@@ -1,7 +1,3 @@
-www/*
-platforms/android/*
-#platforms/ios/*
-# exception to rule above as we want the www directory to still exist
 !www/.gitkeep
 !platforms/.gitkeep
 outputs/
