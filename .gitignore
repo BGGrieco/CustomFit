@@ -1,6 +1,5 @@
 !www/.gitkeep
 !platforms/.gitkeep
 outputs/
-config.xml
 plugins/*
 !plugins/.gitkeep
