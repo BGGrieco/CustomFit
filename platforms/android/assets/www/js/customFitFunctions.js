@@ -8,8 +8,6 @@ if (typeof cordova !== "undefined")
 
 function onDeviceReady()
 {
-  //document.addEventListener("online", onOnline(), false);
-
   $("#fab").fadeIn("slow");
 
   // Set latest workout.

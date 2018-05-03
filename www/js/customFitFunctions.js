@@ -8,7 +8,6 @@ if (typeof cordova !== "undefined")
 
 function onDeviceReady()
 {
-  console.log(StatusBar);
   $("#fab").fadeIn("slow");
 
   // Set latest workout.
