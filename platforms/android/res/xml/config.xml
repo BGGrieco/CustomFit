@@ -4,9 +4,13 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
     <name>CustomFit</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Work out to a virtual trainer, create your own work outs and track your progress.
     </description>
     <author email="brian.g.grieco@gmail.com" href="http://b.g.grieco.github.io">
         Brian G. Grieco

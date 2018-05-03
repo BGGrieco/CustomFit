@@ -1,7 +1,15 @@
+@font-face
+{
+  font-family: "Roboto";
+  src: url("font/roboto.ttf")  format("truetype");
+}
+
 body
 {
   position: relative;
   background-color: #f0f0f0;
+  font-family: "Roboto";
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
