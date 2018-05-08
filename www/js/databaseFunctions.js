@@ -55,7 +55,7 @@ function onDeviceReady()
     {
       return `
       <li>
-        <div class="card" data-workout="${routine}">
+        <div class="card routineCard" data-workout="${routine}">
           <a class="startIt" href="timer.html">
             <div class="cardInfo">
               <h3>${routine}</h3>
@@ -117,7 +117,7 @@ function onDeviceReady()
       obj.forEach(function(exercise, e)
       {
         var id = "No" + e;
-        $("#overviewList").append("<li><div class='overviewCard' id='card" + id + "' onclick='edit(this)'><div class='overviewCardInfo' duration='" + exercise.duration + "' break='" + exercise.break + "'>\n\
+        $("#overviewList").append("<li><div class='overviewCard card' id='card" + id + "' onclick='edit(this)'><div class='overviewCardInfo' duration='" + exercise.duration + "' break='" + exercise.break + "'>\n\
         <h3>" + exercise.name + "</h3><p>" + exercise.duration + " sec.</p><p id='right'>Break: " + exercise.break + " sec.</p>\n\
         </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
       });

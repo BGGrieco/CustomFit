@@ -2,7 +2,7 @@
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>CustomFit</name>
     <description>
-        Work out to a virtual trainer, create your own work outs and track your progress.
+        Work out with a virtual trainer, create your own work outs, track your progress.
     </description>
     <author email="brian.g.grieco@gmail.com" href="http://b.g.grieco.github.io">
         Brian G. Grieco
