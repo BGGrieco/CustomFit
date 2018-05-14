@@ -37,6 +37,7 @@ function onDeviceReady()
       if (event.target != event.currentTarget)
       {
         var theWorkout = (workouts.find(workout => workout.title === event.currentTarget.dataset.workout));
+        console.log(theWorkout);
         var theExercises = theWorkout.exercises;
         var workoutValues = JSON.stringify(theWorkout);
         var exerciseValues = JSON.stringify(theExercises);
@@ -44,11 +45,6 @@ function onDeviceReady()
         localStorage.exercise = exerciseValues;
       }
     }
-
-    /*function appendElement(htmlString, parentQuery)
-    {
-      $(parentQuery).append(htmlString)
-    }*/
 
     // Create Routine Card with appropriate parameters.
     function createCards(routine, icons, time)
@@ -63,7 +59,7 @@ function onDeviceReady()
               <div class="infoIcons">${icons}</div>
             </div>
           </a>
-          <a class="cardOptions" href="existingOverview.html">
+          <a class="cardOptions" href="#">
             <div id="options">
               <img src="images/options.png" width="30" alt="" />
             </div>
@@ -110,7 +106,7 @@ function onDeviceReady()
 
     // EXISTING ROUTINE MODIFICATION
     // Compile Routine Overview List.
-    if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
+    /*if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
     {
       var obj = JSON.parse(localStorage.exercise);
       var title = JSON.parse(localStorage.workout);
@@ -121,7 +117,7 @@ function onDeviceReady()
         <h3>" + exercise.name + "</h3><p>" + exercise.duration + " sec.</p><p id='right'>Break: " + exercise.break + " sec.</p>\n\
         </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
       });
-    }
+    }*/
 
     // Change name of routine.
     $("#changeName").keydown(function()
