@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div>
+        <p>Profile</p>
+      </div>
+    </div>
+
+    <div id="containProfileButtons">
+      <!--Progress Chart-->
+      <div id="showChart">
+        <img src="images/graphBig.png" width="150" alt="" />
+        <p>SEE PROGRESS</p>
+      </div>
+      <!--The Line-->
+      <div id="theLine"></div>
+      <!--Calendar-->
+      <div id="showCalendar">
+        <img src="images/calendar.png" width="150" alt="" />
+        <p>ACCESS CALENDAR</p>
+      </div>
+    </div>
+
+    <!--PROGRESS CHART-->
+    <div id="containChart">
+      <!--Chart-->
+      <canvas id="theChart" width="400" height="400"></canvas>
+      <!--Y Axis Cover-->
+      <div id="yAxisInfo">
+        <p id="ay">DYING</p>
+        <p id="by">Intense</p>
+        <p id="cy">Just<br>right</p>
+        <p id="dy">Broke a<br>sweat</p>
+        <p id="ey">YAWN</p>
+      </div>
+      <!--Back to Profile-->
+      <div id="closeChart">
+        <img src="images/back.png" width="40" alt=""/>
+      </div>
+      <!--Modify X Axis Button-->
+      <a id="chartOptions" href="#">
+        <img src="images/cogGray.png" width="40" alt=""/>
+      </a>
+    </div>
+
+    <!--Modify X Axis Dialogue-->
+    <div id="chartOptionsDialogue" class="card">
+      <h3>How do you want to track your progress?</h3>
+      <input id="daily" type="radio" name="tracking" value="daily"><p>Daily</p>
+      <input id="weekly" type="radio" name="tracking" value="weekly" checked><p>Weekly</p>
+      <input id="monthly" type="radio" name="tracking" value="monthly"><p>Monthly</p>
+      <div id="confirmSettings">
+        <img src="images/tick.png" width="50" alt=""/>
+      </div>
+    </div>
+
+    <!--CALENDAR DIALOGUE-->
+    <div id="containCalendar">
+      <h1>PLAN YOUR<br>WORKOUT SESSIONS!</h1>
+      <!--Display Events-->
+      <pre id="content"></pre>
+      <!--Fetch Events
+      <button id="authorize-button" style="display: none;">Authorize</button>-->
+      <div id="getEvents">
+        <p>Get Events</p>
+      </div>
+      <div id="signOut">
+        <p>Sign Out</p>
+      </div>
+      <!--Back to Profile-->
+      <div id="closeCalendar">
+        <img src="images/back.png" width="40" alt=""/>
+      </div>
+    </div>
+
+    <!--Back Button
+    <div id="activator" class="backButton">
+      <a href="javascript:history.back()">
+        <img src="images/back.png" width="35" alt="" />
+      </a>
+    </div>-->
+
+    <!--DIALOGUE/MENU OVERLAY-->
+    <div id="overlay" class="block"></div>
+
+    <!--FOOTER-->
+    <div class="footer">
+      <!--RADIAL NAV MENU-->
+      <div id="navContainer">
+        <!--Buttons-->
+        <div id="workouts" class="sml smlOne">
+          <div class="testOne">
+            <a id="navOne" href="routines.html">
+              <img id="grayOne" class="in" src="images/workoutsGray.png" width="26" alt="" />
+              <img id="whiteOne" class="out" src="images/workoutsWhite.png" width="30" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="home" class="sml smlTwo">
+          <div class="testTwo">
+            <a id="navTwo" href="index.html">
+              <img id="grayTwo" class="in" src="images/homeGray.png" width="21" alt="" />
+              <img id="whiteTwo" class="out" src="images/homeWhite.png" width="28" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="profile" class="sml smlThree">
+            <div class="testThree">
+              <a id="navThree" href="profile.html">
+                <img id="grayThree" class="in" src="images/profileGray.png" width="23" alt="" />
+                <img id="whiteThree" class="out" src="images/profileWhite.png" width="28" alt="" />
+              </a>
+            </div>
+        </div>
+        <!--Interaction menu-->
+        <div id="burger" class="burgerMenu">
+          <div id="circle" class="tap tapOn"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--IF PHONE IS HORIZONTAL-->
+    <div id="warning">
+      <div class="imageSpinner">
+        <img src="images/rotate.png" align="middle" />
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/chart.min.js"></script>
+    <script type="text/javascript" src="js/profileFunctions.js"></script>
+    <script type="text/javascript" src="js/customFitFunctions.js"></script>
+    <script type="text/javascript" src="js/setFalseBool.js"></script>
+  </body>
+</html>
