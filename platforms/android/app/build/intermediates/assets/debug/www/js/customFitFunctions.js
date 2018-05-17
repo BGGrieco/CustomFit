@@ -8,7 +8,6 @@ if (typeof cordova !== "undefined")
 
 function onDeviceReady()
 {
-  StatusBar.backgroundColorByHexString("#CF4D4D");
   $("#fab").fadeIn("slow");
 
   // Set latest workout.

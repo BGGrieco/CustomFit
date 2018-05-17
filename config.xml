@@ -17,7 +17,10 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <preference name="StatusBarBackgroundColor" value="#CF4D4D" />
+        <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi"/>
+        <resource-file src="res/android/values/ic_launcher_background.xml" target="app/src/main/res/values/ic_launcher_background.xml" />
+        <resource-file src="res/android/mipmap-xxxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+        <resource-file src="res/android/mipmap-xxxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

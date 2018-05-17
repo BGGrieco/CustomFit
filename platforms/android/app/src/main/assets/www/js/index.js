@@ -28,6 +28,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        StatusBar.backgroundColorByHexString("#CF4D4D");
     },
 
     // Update DOM on a Received Event
