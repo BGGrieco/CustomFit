@@ -6,7 +6,7 @@
     density="560dpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1526480523139"
+    timestamp="1526572891327"
     token="-6863207343611423077"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -23,9 +23,6 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
     <artifact
         location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
@@ -59,14 +56,14 @@
     <artifact
         location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
+    <artifact
+        location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1526480523139"
+        timestamp="1526572891327"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
@@ -100,6 +97,9 @@
         <artifact
             location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
