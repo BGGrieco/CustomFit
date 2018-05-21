@@ -74,8 +74,9 @@ function onDeviceReady()
   $("#fab").click(function()
   {
     modifyOverlay(1);
-    $(".dot").toggleClass("dotUp dotDown");
+    $("#fab").toggleClass("dotUp dotDown");
     $(".rotate").toggleClass("rotateActive");
+    $(".lighten").toggleClass("darken");
     $(".container").toggleClass("containerUp containerDown");
     $(".bigOne").toggleClass("bigOneOn");
     $(".bigTwo").toggleClass("bigTwoOn");
