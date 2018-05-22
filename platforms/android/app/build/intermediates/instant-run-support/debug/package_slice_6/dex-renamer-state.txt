@@ -1,4 +1,4 @@
-#Thu May 17 16:24:13 IST 2018
-base.0=/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/transforms/dexMerger/debug/7
+#Mon May 21 16:51:54 IST 2018
+base.0=/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/transforms/dexMerger/debug/45
 renamed.0=classes.dex
-file.0=/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/transforms/dexMerger/debug/7/classes.dex
+file.0=/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/transforms/dexMerger/debug/45/classes.dex
