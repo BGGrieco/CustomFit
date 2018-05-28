@@ -11,27 +11,6 @@ function onDeviceReady()
   $("#fab").fadeIn("slow");
 
   // Set latest workout.
-  /*var workout =
-  {"title": "Full Body",
-    "exercises":
-    [
-      {
-        "name": "Push Ups",
-        "duration": 30,
-        "break": 10
-      },
-      {
-        "name": "Squats",
-        "duration": 30,
-        "break": 10
-      },
-      {
-        "name": "Running in Place",
-        "duration": 30,
-        "break": 10
-      }
-    ]
-  };*/
   if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
   {
     var workout = JSON.parse(localStorage.workout);
@@ -223,7 +202,7 @@ function onDeviceReady()
 }
 
 // NAVIGATE PAGES
-//Index
+// Home
 $(".mainSquare").click(function()
 {
   $(location).attr("href", "timer.html");
@@ -236,14 +215,46 @@ $("#latest").click(function()
 
 $("#change").click(function()
 {
-  $(location).attr("href", "routines.html");
+  setInterval(function()
+  {
+    $(location).attr("href", "routines.html");
+  }, 600);
 });
 
 $("#view").click(function()
 {
-  $(location).attr("href", "profile.html");
+  setInterval(function()
+  {
+    $(location).attr("href", "profile.html");
+  }, 600);
 });
 
+// Routines
+$("#chest").click(function()
+{
+  setInterval(function()
+  {
+    $(location).attr("href", "exercises.html");
+  }, 600);
+});
+
+$(document).on("click", ".startIt", function()
+{
+  setInterval(function()
+  {
+    $(location).attr("href", "timer.html");
+  }, 600);
+});
+
+$(document).on("click", ".cardOptions", function()
+{
+  setInterval(function()
+  {
+    $(location).attr("href", "existingOverview.html");
+  }, 600);
+});
+
+// NavBar
 $("#navOne").click(function()
 {
   $(location).attr("href", "routines.html");

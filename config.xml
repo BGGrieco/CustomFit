@@ -18,7 +18,7 @@
         <resource-file src="res/android/mipmap-xxxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
         <resource-file src="res/android/mipmap-xxxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
         <preference name="StatusBarBackgroundColor" value="#CF4D4D" />
-        <preference name="SplashScreenDelay" value="6000" />
+        <preference name="SplashScreenDelay" value="4000" />
         <preference name="FadeSplashScreenDuration" value="500" />
         <preference name="SplashMaintainAspectRatio" value="true" />
         <preference name="ShowSplashScreenSpinner" value="false" />
