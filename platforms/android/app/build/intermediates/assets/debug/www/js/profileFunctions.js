@@ -6,7 +6,6 @@ if (typeof cordova !== "undefined")
   onDeviceReady();
 }
 
-//$(document).ready(function()
 function onDeviceReady()
 {
   // PROGRESS CHART
@@ -137,6 +136,9 @@ function onDeviceReady()
     setXAxis();
     $(".block").css("display", "none");
     $("#chartOptionsDialogue").css("display", "none");
+    $(".navbarBack").css("display", "block");
+    $(".navbarOptions").css("display", "block");
+
   });
 
   // Set options for progress chart.

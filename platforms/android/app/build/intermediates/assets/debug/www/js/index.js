@@ -29,8 +29,6 @@ var app = {
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
         StatusBar.backgroundColorByHexString("#CF4D4D");
-        if (StatusBar.isVisible) {
-          alert("ayo");
       }
     },
 

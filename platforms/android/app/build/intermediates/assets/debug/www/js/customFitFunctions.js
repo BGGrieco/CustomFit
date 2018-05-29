@@ -191,81 +191,88 @@ function onDeviceReady()
   $("#showChart").click(function()
   {
     $("#containChart").css("display", "block");
+    $(".navbarBack").css("display", "block");
+    $(".navbarOptions").css("display", "block");
   });
 
   // Display Chart Options.
   $("#chartOptions").click(function()
   {
     modifyOverlay(3);
-    $("#chartOptionsDialogue").css("display", "block");
+    //setInterval(function()
+    //{
+      $("#chartOptionsDialogue").css("display", "block");
+      $(".navbarBack").css("display", "none");
+      $(".navbarOptions").css("display", "none");
+    //}, 600);
   });
-}
 
-// NAVIGATE PAGES
-// Home
-$(".mainSquare").click(function()
-{
-  $(location).attr("href", "timer.html");
-});
-
-$("#latest").click(function()
-{
-  $(location).attr("href", "timer.html");
-});
-
-$("#change").click(function()
-{
-  setInterval(function()
-  {
-    $(location).attr("href", "routines.html");
-  }, 600);
-});
-
-$("#view").click(function()
-{
-  setInterval(function()
-  {
-    $(location).attr("href", "profile.html");
-  }, 600);
-});
-
-// Routines
-$("#chest").click(function()
-{
-  setInterval(function()
-  {
-    $(location).attr("href", "exercises.html");
-  }, 600);
-});
-
-$(document).on("click", ".startIt", function()
-{
-  setInterval(function()
+  // NAVIGATE PAGES
+  // Home
+  $(".mainSquare").click(function()
   {
     $(location).attr("href", "timer.html");
-  }, 600);
-});
+  });
 
-$(document).on("click", ".cardOptions", function()
-{
-  setInterval(function()
+  $("#latest").click(function()
   {
-    $(location).attr("href", "existingOverview.html");
-  }, 600);
-});
+    $(location).attr("href", "timer.html");
+  });
 
-// NavBar
-$("#navOne").click(function()
-{
-  $(location).attr("href", "routines.html");
-});
+  $("#change").click(function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "routines.html");
+    }, 600);
+  });
 
-$("#navTwo").click(function()
-{
-  $(location).attr("href", "index.html");
-});
+  $("#view").click(function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "profile.html");
+    }, 600);
+  });
 
-$("#navThree").click(function()
-{
-  $(location).attr("href", "profile.html");
-});
+  // Routines
+  $("#chest").click(function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "exercises.html");
+    }, 600);
+  });
+
+  $(document).on("click", ".startIt", function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "timer.html");
+    }, 600);
+  });
+
+  $(document).on("click", ".cardOptions", function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "existingOverview.html");
+    }, 600);
+  });
+
+  // NavBar
+  $("#navOne").click(function()
+  {
+    $(location).attr("href", "routines.html");
+  });
+
+  $("#navTwo").click(function()
+  {
+    $(location).attr("href", "index.html");
+  });
+
+  $("#navThree").click(function()
+  {
+    $(location).attr("href", "profile.html");
+  });
+}
