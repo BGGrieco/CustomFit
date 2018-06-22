@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue May 22 13:02:03 IST 2018
+#Fri Jun 22 11:43:44 IST 2018
 60.set=ASSET
 52.set=ANDROID_RESOURCE
 53.base=/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/assets/debug
