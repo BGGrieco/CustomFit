@@ -52,18 +52,16 @@ function onDeviceReady()
       return `
       <li>
         <div class="card routineCard" data-workout="${routine}">
-          <a class="startIt" href="timer.html">
-            <div class="cardInfo">
+          <div class="startIt">
+            <div class="cardInfo rippleTab">
               <h3>${routine}</h3>
               <p>${time} min.</p>
               <div class="infoIcons">${icons}</div>
             </div>
-          </a>
-          <a class="cardOptions" href="#">
-            <div id="options">
-              <img src="images/options.png" width="30" alt="" />
-            </div>
-          </a>
+          </div>
+          <div class="cardOptions optionsRipple">
+            <img class="cardCog" src="images/options.png" width="30" alt="" />
+          </div>
         </div>
       </li>
       `

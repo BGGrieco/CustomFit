@@ -11,27 +11,6 @@ function onDeviceReady()
   $("#fab").fadeIn("slow");
 
   // Set latest workout.
-  /*var workout =
-  {"title": "Full Body",
-    "exercises":
-    [
-      {
-        "name": "Push Ups",
-        "duration": 30,
-        "break": 10
-      },
-      {
-        "name": "Squats",
-        "duration": 30,
-        "break": 10
-      },
-      {
-        "name": "Running in Place",
-        "duration": 30,
-        "break": 10
-      }
-    ]
-  };*/
   if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
   {
     var workout = JSON.parse(localStorage.workout);
@@ -212,49 +191,88 @@ function onDeviceReady()
   $("#showChart").click(function()
   {
     $("#containChart").css("display", "block");
+    $(".navbarBack").css("display", "block");
+    $(".navbarOptions").css("display", "block");
   });
 
   // Display Chart Options.
   $("#chartOptions").click(function()
   {
     modifyOverlay(3);
-    $("#chartOptionsDialogue").css("display", "block");
+    //setInterval(function()
+    //{
+      $("#chartOptionsDialogue").css("display", "block");
+      $(".navbarBack").css("display", "none");
+      $(".navbarOptions").css("display", "none");
+    //}, 600);
+  });
+
+  // NAVIGATE PAGES
+  // Home
+  $(".mainSquare").click(function()
+  {
+    $(location).attr("href", "timer.html");
+  });
+
+  $("#latest").click(function()
+  {
+    $(location).attr("href", "timer.html");
+  });
+
+  $("#change").click(function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "routines.html");
+    }, 600);
+  });
+
+  $("#view").click(function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "profile.html");
+    }, 600);
+  });
+
+  // Routines
+  $("#chest").click(function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "exercises.html");
+    }, 600);
+  });
+
+  $(document).on("click", ".startIt", function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "timer.html");
+    }, 600);
+  });
+
+  $(document).on("click", ".cardOptions", function()
+  {
+    setInterval(function()
+    {
+      $(location).attr("href", "existingOverview.html");
+    }, 600);
+  });
+
+  // NavBar
+  $("#navOne").click(function()
+  {
+    $(location).attr("href", "routines.html");
+  });
+
+  $("#navTwo").click(function()
+  {
+    $(location).attr("href", "index.html");
+  });
+
+  $("#navThree").click(function()
+  {
+    $(location).attr("href", "profile.html");
   });
 }
-
-// NAVIGATE PAGES
-//Index
-$(".mainSquare").click(function()
-{
-  $(location).attr("href", "timer.html");
-});
-
-$("#latest").click(function()
-{
-  $(location).attr("href", "timer.html");
-});
-
-$("#change").click(function()
-{
-  $(location).attr("href", "routines.html");
-});
-
-$("#view").click(function()
-{
-  $(location).attr("href", "profile.html");
-});
-
-$("#navOne").click(function()
-{
-  $(location).attr("href", "routines.html");
-});
-
-$("#navTwo").click(function()
-{
-  $(location).attr("href", "index.html");
-});
-
-$("#navThree").click(function()
-{
-  $(location).attr("href", "profile.html");
-});

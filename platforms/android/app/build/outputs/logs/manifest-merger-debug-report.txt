@@ -4,24 +4,24 @@ ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/A
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
+MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-15:12
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
 	package
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:102-135
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:98-131
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:74-101
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:70-97
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 	android:hardwareAccelerated
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:136-194
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:132-190
 	android:versionCode
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:46-69
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 supports-screens
@@ -44,6 +44,8 @@ ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/A
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
 ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:5-12:19
+MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-13:19
+MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-13:19
 	android:supportsRtl
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
@@ -80,9 +82,15 @@ ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/A
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
 uses-sdk
 ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:13:5-74
-MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
-MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-44
+MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-44
 	android:targetSdkVersion
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:13:42-71
 	android:minSdkVersion
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:13:15-41
+meta-data#android.max_aspect
+ADDED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:9-12:35
+	android:value
+		ADDED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:13-32
+	android:name
+		ADDED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:13-46
