@@ -72,10 +72,6 @@
         "source": "/Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/Users/Brian/Projects/Code/CustomFit/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }

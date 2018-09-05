@@ -73,22 +73,22 @@ function onDeviceReady()
       var time;
       var exercises = i.exercises;
       var icons;
-      if (routine === "God Legs")
+      if (routine == "God Legs")
       {
         icons = "<img src='images/legs.png' width='18' alt='' /><img src='images/cardio.png' width='30' alt='' />"
         time = 7;
       }
-      else if (routine === "Morning Stretch")
+      else if (routine == "Morning Stretch")
       {
         icons = "<img src='images/stretch.png' width='50' alt='' />"
         time = 5;
       }
-      else if (routine === "Cardio Burst")
+      else if (routine == "Cardio Burst")
       {
         icons = "<img src='images/cardio.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' />"
         time = 7;
       }
-      else if (routine === "Full Body" || "Muay Thai Warmup")
+      else if (routine == "Full Body" || "Muay Thai Warmup")
       {
         icons = "<img src='images/thorso.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' /><img src='images/cardio.png' width='30' alt='' /><img src='images/stretch.png' width='50' alt='' />"
         time = 10;

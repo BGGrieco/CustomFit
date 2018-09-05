@@ -1,1 +1,1 @@
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1},"path":"app-debug.apk","properties":{"packageId":"io.cordova.hellocordova","split":"","minSdkVersion":"16"}}]
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":30000},"path":"app-debug.apk","properties":{"packageId":"io.custom.fit","split":"","minSdkVersion":"16"}}]

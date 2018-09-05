@@ -9,19 +9,19 @@ INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/mai
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
 	package
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:98-131
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:100-123
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:70-97
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:74-99
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 	android:hardwareAccelerated
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:132-190
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:124-182
 	android:versionCode
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:46-69
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml
 supports-screens
@@ -47,14 +47,16 @@ ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/A
 MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-13:19
 MERGED from [:CordovaLib] /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-13:19
 	android:supportsRtl
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:181-207
 	android:label
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:148-180
+	android:drawable
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:18-66
 	android:hardwareAccelerated
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:67-101
 	android:icon
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
-activity#io.cordova.hellocordova.MainActivity
+		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:5:102-147
+activity#io.custom.fit.MainActivity
 ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
 	android:label
 		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/app/src/main/AndroidManifest.xml:6:97-134
