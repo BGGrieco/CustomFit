@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/brian/Projects/CustomFit/platforms/android/app/build/intermediates/processing-tools/runtime-deps/release/desugar_try_with_resources.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="28.0.3"
+        sha1="db243bf9323563b72ae2d75666dee74928cbf810">
+        <dex dex="/Users/brian/Projects/CustomFit/platforms/android/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/brian/Projects/CustomFit/platforms/android/app/build/intermediates/transforms/desugar/release/0.jar"
+        jumboMode="false"
+        min-sdk-version="16"
+        optimize="true"
+        revision="28.0.3"
+        sha1="bead58dba1ca2f4010f0baa0dacd6552dd50300e">
+        <dex dex="/Users/brian/Projects/CustomFit/platforms/android/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+
+</items>
