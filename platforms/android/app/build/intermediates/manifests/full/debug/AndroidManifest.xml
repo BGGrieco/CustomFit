@@ -25,7 +25,8 @@
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher_foreground"
         android:label="@string/app_name"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        android:testOnly="true" >
         <activity
             android:name="io.custom.fit.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"

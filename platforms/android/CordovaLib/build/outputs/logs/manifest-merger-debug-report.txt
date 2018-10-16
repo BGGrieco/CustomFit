@@ -1,35 +1,35 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:1-7:12
 	package
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:70-98
-		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
-		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
+		ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:70-98
+		INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
+		INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:99-124
-		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
-		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
+		ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:99-124
+		INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
+		INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:11-69
+		ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:125-148
-		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
-		INJECTED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
+		ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:2:125-148
+		INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
+		INJECTED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml
 uses-sdk
-ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:3:3-42
+ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:3:3-42
 	android:minSdkVersion
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:3:13-39
+		ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:3:13-39
 application
-ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:4:3-6:17
+ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:4:3-6:17
 meta-data#android.max_aspect
-ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:5:5-72
+ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:5:5-72
 	android:value
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:5:50-69
+		ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:5:50-69
 	android:name
-		ADDED from /Users/Brian/Projects/Code/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:5:16-49
+		ADDED from /Users/brian/Projects/CustomFit/platforms/android/CordovaLib/AndroidManifest.xml:5:16-49
