@@ -47,11 +47,11 @@ function onDeviceReady()
     }
 
     // Create Routine Card with appropriate parameters.
-    function createCards(routine, icons, time)
+    function createCards(idNumber, routine, icons, time)
     {
       return `
       <li>
-        <div class="card routineCard" data-workout="${routine}">
+        <div id="card${idNumber}" class="card routineCard" data-workout="${routine}">
           <div class="startIt">
             <div class="cardInfo rippleTab">
               <h3>${routine}</h3>
@@ -70,6 +70,8 @@ function onDeviceReady()
     workouts.forEach(function(i)
     {
       var routine = i.title;
+      console.log(routine);
+      var idNumber = i;
       var time;
       var exercises = i.exercises;
       var icons;
@@ -99,7 +101,8 @@ function onDeviceReady()
         time = 1;
       }
 
-      $("#cardList").append(createCards(routine, icons, time));
+      $("#cardList").append(createCards(idNumber, routine, icons, time));
+      console.log("face number:" + idNumber);
     });
 
     // EXISTING ROUTINE MODIFICATION
