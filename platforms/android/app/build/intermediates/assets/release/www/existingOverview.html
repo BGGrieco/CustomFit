@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/w3c_v4.css" type="text/css">
+    <link rel="stylesheet" href="css/customFitStyling.css" type="text/css">
+    <link rel="stylesheet" href="css/rangeslider.css" type="text/css">
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div>
+        <p>Routine Overview</p>
+      </div>
+    </div>
+
+    <!--RADIAL MENU-->
+    <!--Fixed Container-->
+    <div id="fixIt">
+      <!--Adaptive Container-->
+      <div class="square">
+        <div class="container containerDown">
+          <div id="fab" class="dotDown rippleFab">
+            <div id=plusContain class="fab rotate">
+              <img id="plus" class="lighten" src="images/plus.png" width="12" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--Radial Buttons-->
+        <div id="chest" class="tab bigOne rippleTab">
+          <div class="iconButton">
+            <img class="workIcon" src="images/thorso.png" alt="" />
+          </div>
+        </div>
+        <div id="stretch" class="tab bigTwo rippleTab">
+          <div class="iconButton" style="top: 24%;">
+            <img class="workIcon" src="images/stretch.png" alt="" />
+          </div>
+        </div>
+        <div id="cardio" class="tab bigThree rippleTab">
+          <div class="iconButton" style="top: 28%">
+            <img class="workIcon" src="images/cardio.png" alt="" />
+          </div>
+        </div>
+        <div id="legs" class="tab bigFour rippleTab">
+          <div class="iconButton" style="top: 23%">
+            <img class="workIcon" src="images/legs.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--OVERVIEW CARDS-->
+    <!--Delete-->
+    <div id="delete">
+      <img src="images/thrashGray.png" width="23" alt="" />
+    </div>
+    <!--Name-->
+    <h2 id="overviewTitle"></h2>
+    <input id="changeName" onClick="this.setSelectionRange(0, this.value.length)" type="text"  />
+    <!--List-->
+    <ul id="overviewList"></ul>
+
+    <!--SPECIFY TIMING FOR EXERCISES-->
+    <div id="overviewSpecifier">
+      <p id="infoP"></p>
+      <img id="illustrate" src="images/pushUps.png" width="180" alt="" />
+      <div id="sliderPlacement">
+        <div id="containSliders">
+          <!--Exercise time allocator-->
+          <output id="timeValue"></output>
+          <div id="containSliderOne">
+            <p>Exercise Time:</p>
+            <input type="range" id="determineTime" step="10" value="30" min="0" max="180" />
+          </div>
+          <!--Break time allocator-->
+          <div id="containSliderTwo">
+            <p>Rest Time:</p>
+            <output id="restValue"></output>
+            <input type="range" id="determineRest" step="10" value="10" min="0" max="180" />
+          </div>
+          <!--Back Button-->
+          <div id="cancel">
+            <a id="exerciseCancel" href="#">
+              <img src="images/back.png" width="40" alt="" />
+            </a>
+          </div>
+          <!--Confirm Button-->
+          <div id="confirm">
+            <a id="exerciseConfirm" href="#">
+              <img src="images/tick.png" width="45" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SAVE ROUTINE-->
+    <div id="containSaveButton">
+      <div id="save">
+        <a href="routines.html">
+          <img src="images/tick.png" width="50" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!--DELETE ROUTINE DIALOGUE-->
+    <div id="deleteRoutine" class="card">
+      <h3>DELETE THIS ROUTINE?</h3>
+      <!--Delete Button-->
+      <div id="confirmDelete">
+        <img src="images/tick.png" width="45" alt=""/>
+      </div>
+      <!--Cancel Button-->
+      <div id="cancelDelete">
+        <img src="images/xButton.png" width="35" alt=""/>
+      </div>
+    </div>
+
+    <!--Back Button-->
+    <div id="activator" class="backButton" style="bottom: 15%;">
+      <a href="javascript:history.back()">
+        <img src="images/back.png" width="35" alt="" />
+      </a>
+    </div>
+
+    <!--MENU OVERLAY-->
+    <div id="overlay" class="block"></div>
+
+    <!--FOOTER-->
+    <div class="footer">
+      <!--RADIAL NAV MENU-->
+      <div id="navContainer">
+        <!--Buttons-->
+        <div id="workouts" class="sml smlOne">
+          <div class="testOne">
+            <a id="navOne" href="routines.html">
+              <img id="grayOne" class="in" src="images/workoutsGray.png" width="26" alt="" />
+              <img id="whiteOne" class="out" src="images/workoutsWhite.png" width="30" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="home" class="sml smlTwo">
+          <div class="testTwo">
+            <a id="navTwo" href="index.html">
+              <img id="grayTwo" class="in" src="images/homeGray.png" width="21" alt="" />
+              <img id="whiteTwo" class="out" src="images/homeWhite.png" width="28" alt="" />
+            </a>
+          </div>
+        </div>
+        <div id="profile" class="sml smlThree">
+            <div class="testThree">
+              <a id="navThree" href="profile.html">
+                <img id="grayThree" class="in" src="images/profileGray.png" width="23" alt="" />
+                <img id="whiteThree" class="out" src="images/profileWhite.png" width="28" alt="" />
+              </a>
+            </div>
+        </div>
+        <!--Interaction menu-->
+        <div id="burger" class="burgerMenu">
+          <div id="circle" class="tap tapOn"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--LOADING SCREEN-->
+    <div class="square" id="loadingSquare" style="top: -50px">
+      <div class="pulsate">
+        <img src="images/emptyChrono.png" />
+      </div>
+      <div class="spin">
+        <img src="images/chronoArm.png" />
+      </div>
+      <div id="progress">
+        <div id="progressBar">0%</div>
+      </div>
+    </div>
+
+    <!--IF PHONE IS HORIZONTAL-->
+    <div id="warning">
+      <div class="imageSpinner">
+        <img src="images/rotate.png" align="middle" />
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script type="text/javascript" src="js/databaseFunctions.js"></script>
+    <script type="text/javascript" src="js/rangeslider.min.js"></script>
+    <script type="text/javascript" src="js/rangesliderFunctions.js"></script>
+    <script type="text/javascript" src="js/customFitFunctions.js"></script>
+  </body>
+</html>
