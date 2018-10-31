@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 11 12:14:15 IST 2018
+#Tue Oct 30 15:35:07 GMT 2018
 60.set=DEX
 52.set=ASSET
 53.base=/Users/brian/Projects/CustomFit/platforms/android/app/build/intermediates/assets/debug
