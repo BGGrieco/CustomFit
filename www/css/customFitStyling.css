@@ -886,28 +886,19 @@ a
 */
 #exerciseContainer
 {
-  position: absolute;
-  top: 70px;
-  width: 100%;
+  position: relative;
+  margin: auto;
+  top: 75px;
+  height: 100%;
 }
 
-.exerciseL
+.exercise
 {
   position: relative;
+  float: left;
   width: 145px;
   height: 145px;
-  margin-left: 5%;
-  text-align: center;
-}
-
-.exerciseR
-{
-  position: relative;
-  width: 145px;
-  height: 145px;
-  top: -151px;
-  margin-top: 5px;
-  margin-left: 52%;
+  margin: 0% 0% 6% 6%;
   text-align: center;
 }
 
@@ -918,16 +909,23 @@ a
   bottom: 0px;
 }
 
-.exerciseR h3, .exerciseL h3
+.h3Container h3
 {
-  position: relative;
   font-size: 16px;
 }
 
-.exerciseR img, .exerciseL img
+.exercise img
 {
   position: relative;
   top: 40px;
+}
+
+#padder
+{
+  position: relative;
+  height: 100px;
+  width: 100%;
+  top: 720px;
 }
 
 /**
@@ -939,6 +937,7 @@ a
 {
   display: none;
   position: fixed;
+  top: 0px;
   height: 100%;
   width: 100%;
   background-color: #f0f0f0;
