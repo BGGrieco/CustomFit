@@ -29,6 +29,85 @@ function onDeviceReady()
   {
     var workouts = snap.val();
 
+    var exercises = ["Push Ups", "Plank", "Sit Ups", "Leg Ups", "Russian Twists", "Back Raises", "Burpees", "Mountain Climbers"];
+
+    function createCards(indexNumber, exercise, image)
+    {
+      var delay = indexNumber * 0.05;
+      return `
+      <div class="exercise card" style="animation-delay: ${delay}s">
+        ${image}
+        <div class="h3Container">
+          <h3>${exercise}</h3>
+        </div>
+      </div>
+      `
+    }
+
+    exercises.forEach(function(a, i)
+    {
+      var exercise = a;
+      var indexNumber = i;
+      var image;
+
+      switch(exercise)
+      {
+        case "Push Ups":
+          image = "<img src='images/pushUps.png' width='110' alt='' />";
+          break;
+
+        case "Plank":
+          image = "<img src='images/plank.png' width='110' alt='' />";
+          break;
+
+        case "Sit Ups":
+          image = "<img src='images/sitUps.png' width='90' style='top: 25px;' alt='' />";
+          break;
+
+        case "Leg Ups":
+          image = "<img src='images/legUps.png' width='90' style='top: 15px;' alt='' />";
+          break;
+
+        case "Russian Twists":
+          image = "<img src='images/twists.png' width='110' style='top: 25px;' alt='' />";
+          break;
+
+        case "Back Raises":
+          image = "<img src='images/backRaises.png' width='115' alt='' />";
+          break;
+
+        case "Burpees":
+          image = "<img src='images/burpee.png' width='80' style='top: 20px;' alt='' />";
+          break;
+
+        default:
+          image = "<img src='images/climber.png' width='110' alt='' />";
+      }
+
+      // if (exercise === "Push Ups")
+      // {
+      //   image = "<img src='images/pushUps.png' width='110' alt='' />"
+      // }
+      // else if (exercise === "Plank")
+      // {
+      //   image = "<img src='images/stretch.png' width='50' alt='' />"
+      // }
+      // else if (exercise === "Sit Ups")
+      // {
+      //   image = "<img src='images/cardio.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' />"
+      // }
+      // else if (exercise === "Leg Ups")
+      // {
+      //   image = "<img src='images/thorso.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' /><img src='images/cardio.png' width='30' alt='' /><img src='images/stretch.png' width='50' alt='' />"
+      // }
+      // else
+      // {
+      //   image = "<img src='images/thorso.png' width='30' alt='' />"
+      // }
+
+      $("#exerciseContainer").append(createCards(indexNumber, exercise, image));
+    });
+
     // NEW ROUTINE MODIFICATION
     // Store slider inputs.
     var time = document.getElementById("determineTime");
@@ -123,27 +202,4 @@ function onDeviceReady()
       firebaseRef.child("workouts").child(i).push(createdExercise);
     });
   });
-
-  // LOADING BAR ANIMATION
-  load();
-
-  function load()
-  {
-    var bar = document.getElementById("progressBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame()
-    {
-      if (width >= 99)
-      {
-        clearInterval(id);
-      }
-      else
-      {
-        width++;
-        bar.style.width = width + '%';
-        bar.innerHTML = width * 1 + '%';
-      }
-    }
-  }
 }

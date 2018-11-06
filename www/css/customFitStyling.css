@@ -789,7 +789,7 @@ a
   }
   80%
   {
-    top: -5px;
+    top: -10px;
     opacity: 1;
   }
   100%
@@ -900,7 +900,46 @@ a
   height: 145px;
   margin: 0% 0% 6% 6%;
   text-align: center;
+  /* top: 150px;
+  opacity: 0; */
+  transform: scale(0, 0);
+  animation: popIn 0.2s ease-out forwards;
 }
+
+@keyframes popIn
+{
+  0%
+  {
+    transform: scale(0, 0);
+  }
+  60%
+  {
+    transform: scale(1.1, 1.1);
+  }
+  100%
+  {
+    transform: scale(1, 1);
+  }
+}
+
+/* @keyframes slidingIn
+{
+  0%
+  {
+    top: 150px;
+    opacity: 0;
+  }
+  60%
+  {
+    top: -10px;
+    opacity: 1;
+  }
+  100%
+  {
+    top: 0px;
+    opacity: 1;
+  }
+} */
 
 .h3Container
 {
