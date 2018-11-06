@@ -12,7 +12,6 @@ else
 function onDeviceReady()
 {
   var workouts = JSON.parse(localStorage.workouts);
-  console.log(workouts);
 
   // Fetch the right object on click.
   function handleButtonClick(event)

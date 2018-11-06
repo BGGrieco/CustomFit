@@ -29,22 +29,24 @@ function onDeviceReady()
   var dbRef = firebase.database().ref().child("workouts");
 
   // Sync with Firebase on launch.
-  var updated = localStorage.updateVar;
-  if (updated !== true)
+  updateData();
+
+  function updateData()
   {
-    dbRef.on("value", snap =>
+    if (localStorage.getItem("updated") === null)
     {
-      var value = JSON.stringify(snap.val());
-      localStorage.workouts = value;
-      localStorage.updateVar = true;
-      console.log("Data updated: " + updated);
-      $("#loadingSquare").css("display", "none");
-    });
-  }
-  else
-  {
-    $("#loadingSquare").css("display", "none");
-    console.log("Data updated: " + updated);
+      dbRef.on("value", snap =>
+      {
+        var value = JSON.stringify(snap.val());
+        localStorage.workouts = value;
+        $("#loading").css("display", "none");
+      })
+      localStorage.setItem("updated", true);
+    }
+    else
+    {
+      $("#loading").css("display", "none");
+    }
   }
 
   // LOADING BAR ANIMATION
