@@ -741,7 +741,7 @@ a
 /* CARD STYLING */
 #cardList
 {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 60px;
   padding-bottom: 160px;
