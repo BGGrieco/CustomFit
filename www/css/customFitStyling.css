@@ -741,7 +741,7 @@ a
 /* CARD STYLING */
 #cardList
 {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 60px;
   padding-bottom: 160px;
@@ -789,7 +789,7 @@ a
   }
   80%
   {
-    top: -5px;
+    top: -10px;
     opacity: 1;
   }
   100%
@@ -886,30 +886,60 @@ a
 */
 #exerciseContainer
 {
-  position: absolute;
-  top: 70px;
-  width: 100%;
+  position: relative;
+  margin: auto;
+  top: 75px;
+  height: 100%;
 }
 
-.exerciseL
+.exercise
 {
   position: relative;
+  float: left;
   width: 145px;
   height: 145px;
-  margin-left: 5%;
+  margin: 0% 0% 6% 6%;
   text-align: center;
+  /* top: 150px;
+  opacity: 0; */
+  transform: scale(0, 0);
+  animation: popIn 0.2s ease-out forwards;
 }
 
-.exerciseR
+@keyframes popIn
 {
-  position: relative;
-  width: 145px;
-  height: 145px;
-  top: -151px;
-  margin-top: 5px;
-  margin-left: 52%;
-  text-align: center;
+  0%
+  {
+    transform: scale(0, 0);
+  }
+  60%
+  {
+    transform: scale(1.1, 1.1);
+  }
+  100%
+  {
+    transform: scale(1, 1);
+  }
 }
+
+/* @keyframes slidingIn
+{
+  0%
+  {
+    top: 150px;
+    opacity: 0;
+  }
+  60%
+  {
+    top: -10px;
+    opacity: 1;
+  }
+  100%
+  {
+    top: 0px;
+    opacity: 1;
+  }
+} */
 
 .h3Container
 {
@@ -918,16 +948,23 @@ a
   bottom: 0px;
 }
 
-.exerciseR h3, .exerciseL h3
+.h3Container h3
 {
-  position: relative;
   font-size: 16px;
 }
 
-.exerciseR img, .exerciseL img
+.exercise img
 {
   position: relative;
   top: 40px;
+}
+
+#padder
+{
+  position: relative;
+  height: 100px;
+  width: 100%;
+  top: 720px;
 }
 
 /**
@@ -939,6 +976,7 @@ a
 {
   display: none;
   position: fixed;
+  top: 0px;
   height: 100%;
   width: 100%;
   background-color: #f0f0f0;
