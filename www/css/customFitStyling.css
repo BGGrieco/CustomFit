@@ -741,7 +741,7 @@ a
 /* CARD STYLING */
 #cardList
 {
-  position: relative;
+  position: absolute;
   width: 100%;
   top: 60px;
   padding-bottom: 160px;
@@ -754,6 +754,7 @@ a
 #cardList li
 {
   position: relative;
+  left: -2px;
   padding-left: 0px;
   padding-bottom: 10px;
 }
