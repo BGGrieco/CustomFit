@@ -100,39 +100,6 @@ function onDeviceReady()
         }
       ]
     };
-  });
-
-  // NEW ROUTINE MODIFICATION
-  // Store slider inputs.
-  var time = document.getElementById("determineTime");
-  var rest = document.getElementById("determineRest");
-  var title = "Unnamed Routine";
-
-  // Create new routine.
-  $("#newExerciseConfirm").click(function()
-  {
-    var timeValue = time.value;
-    var restValue = rest.value;
-    var name = $("#infoP").text();
-    var addExercise =
-    {
-      "name": name,
-      "duration": timeValue,
-      "break": restValue
-    };
-
-    var newRoutine =
-    {
-      "title": title,
-      "exercises":
-      [
-        {
-          "name": name,
-          "duration": timeValue,
-          "break": restValue
-        }
-      ]
-    };
 
     if (localStorage.makingNew === "false")
     {
@@ -152,7 +119,7 @@ function onDeviceReady()
   var newTitle = newObj.title;
   arr.forEach(function(i)
   {
-    $("#newOverviewList").append("<li><div class='overviewCard'><div class='overviewCardInfo' duration='" + i.duration + "' break='" + i.break + "'>\n\
+    $("#newOverviewList").append("<li><div class='overviewCard card'><div class='overviewCardInfo' duration='" + i.duration + "' break='" + i.break + "'>\n\
     <h3>" + i.name + "</h3><p>" + i.duration + " sec.</p><p id='right'>Break: " + i.break + " sec.</p>\n\
     </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
   });

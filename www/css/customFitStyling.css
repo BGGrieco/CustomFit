@@ -344,7 +344,7 @@ a
   width: 100%;
   height: 56px;
   border-radius: 50%;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
   pointer-events: auto;
   display: none;
 }
@@ -445,7 +445,7 @@ a
   -o-transform: translate(-1px, -1px);
   -ms-transform: translate(-1px, -1px);
   transform: translate(-1px, -1px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes yAxisUp
@@ -572,7 +572,7 @@ a
   border-left: 1px solid #ffffff;
   border-bottom: 1px solid #fafafa;
   border-right: 1px solid #fafafa;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.1);
   pointer-events: auto;
   transform: scale(0);
   opacity: 0;
@@ -1088,12 +1088,12 @@ a
 *
 */
 /* OVERVIEW LIST SECTION */
-#existingOverview
+.overviewContainer
 {
   position: relative;
   margin: auto;
   margin-bottom: 160px;
-  top: 70px;
+  top: 60px;
   width: 90%;
 }
 

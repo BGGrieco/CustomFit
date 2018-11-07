@@ -52,15 +52,17 @@
     </div>
 
     <!--OVERVIEW CARDS-->
-    <!--Delete-->
-    <div id="delete">
-      <img src="images/thrashGray.png" width="23" alt="" />
+    <div class="overviewContainer">
+      <!--Delete-->
+      <div id="delete">
+        <img src="images/thrashGray.png" width="23" alt="" />
+      </div>
+      <!--Name-->
+      <h2 id="overviewTitle"></h2>
+      <input id="changeName" onClick="this.setSelectionRange(0, this.value.length)" type="text"  />
+      <!--List-->
+      <ul id="overviewList"></ul>
     </div>
-    <!--Name-->
-    <h2 id="overviewTitle"></h2>
-    <input id="changeName" onClick="this.setSelectionRange(0, this.value.length)" type="text"  />
-    <!--List-->
-    <ul id="overviewList"></ul>
 
     <!--SPECIFY TIMING FOR EXERCISES-->
     <div id="overviewSpecifier">
