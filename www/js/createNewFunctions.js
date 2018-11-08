@@ -117,10 +117,12 @@ function onDeviceReady()
   var newObj = JSON.parse(localStorage.newRoutine);
   var arr = newObj.exercises;
   var newTitle = newObj.title;
-  arr.forEach(function(i)
+  arr.forEach(function(a, i)
   {
-    $("#newOverviewList").append("<li><div class='overviewCard card'><div class='overviewCardInfo' duration='" + i.duration + "' break='" + i.break + "'>\n\
-    <h3>" + i.name + "</h3><p>" + i.duration + " sec.</p><p id='right'>Break: " + i.break + " sec.</p>\n\
+    var delay = i * 0.1;
+    console.log(delay);
+    $("#newOverviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s'><div class='overviewCardInfo' duration='" + a.duration + "' break='" + a.break + "'>\n\
+    <h3>" + a.name + "</h3><p>" + a.duration + " sec.</p><p id='right'>Break: " + a.break + " sec.</p>\n\
     </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
   });
 
