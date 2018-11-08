@@ -344,7 +344,7 @@ a
   width: 100%;
   height: 56px;
   border-radius: 50%;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
   pointer-events: auto;
   display: none;
 }
@@ -445,7 +445,7 @@ a
   -o-transform: translate(-1px, -1px);
   -ms-transform: translate(-1px, -1px);
   transform: translate(-1px, -1px);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes yAxisUp
@@ -572,7 +572,7 @@ a
   border-left: 1px solid #ffffff;
   border-bottom: 1px solid #fafafa;
   border-right: 1px solid #fafafa;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.1);
   pointer-events: auto;
   transform: scale(0);
   opacity: 0;
@@ -741,7 +741,7 @@ a
 /* CARD STYLING */
 #cardList
 {
-  position: relative;
+  position: absolute;
   width: 100%;
   top: 60px;
   padding-bottom: 160px;
@@ -1088,12 +1088,12 @@ a
 *
 */
 /* OVERVIEW LIST SECTION */
-#existingOverview
+.overviewContainer
 {
   position: relative;
   margin: auto;
   margin-bottom: 160px;
-  top: 70px;
+  top: 60px;
   width: 90%;
 }
 
@@ -1944,7 +1944,7 @@ input[type=text]
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   opacity: 0.9;
   display: none;
   z-index: 0;
@@ -1995,12 +1995,12 @@ input[type=text]
   display: none;
 }
 
-#navOne:active img:first-child
+#navOne:hover img:first-child
 {
   display: none;
 }
 
-#navOne:active img:last-child
+#navOne:hover img:last-child
 {
   display: block;
   position: relative;
@@ -2022,12 +2022,12 @@ input[type=text]
   display: none;
 }
 
-#navTwo:active img:first-child
+#navTwo:hover img:first-child
 {
   display: none;
 }
 
-#navTwo:active img:last-child
+#navTwo:hover img:last-child
 {
   display: block;
   position: relative;
@@ -2049,12 +2049,12 @@ input[type=text]
   display: none;
 }
 
-#navThree:active img:first-child
+#navThree:hover img:first-child
 {
   display: none;
 }
 
-#navThree:active img:last-child
+#navThree:hover img:last-child
 {
   display: block;
   position: relative;
@@ -2081,7 +2081,7 @@ input[type=text]
   left: -2px;
 }
 
-.testOne a:active
+.testOne a:hover
 {
   background-color: #6eadea;
   border: none;
@@ -2093,7 +2093,7 @@ input[type=text]
   animation: whopL 0.1s ease forwards;
 }
 
-.testTwo a:active
+.testTwo a:hover
 {
   background-color: #6eadea;
   border: none;
@@ -2105,7 +2105,7 @@ input[type=text]
   animation: whopC 0.1s ease forwards;
 }
 
-.testThree a:active
+.testThree a:hover
 {
   background-color: #6eadea;
   border: none;
@@ -2260,6 +2260,7 @@ input[type=text]
 {
   display: block;
   position: fixed;
+  top: 0px;
   width: 100%;
   height: 100%;
   background-color: #f0f0f0;

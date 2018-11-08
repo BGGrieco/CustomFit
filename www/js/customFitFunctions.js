@@ -8,10 +8,7 @@ if (typeof cordova !== "undefined")
 
 function onDeviceReady()
 {
-  setTimeout(function()
-  {
-    $("#fab").fadeIn(300);
-  }, 700);
+  
 
   // Set latest workout.
   if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
