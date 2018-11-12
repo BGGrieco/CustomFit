@@ -1,0 +1,146 @@
+{
+  "workouts" : [ {
+    "exercises" : [ {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Push Ups"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Squats"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Running in Place"
+    } ],
+    "title" : "Full Body"
+  }, {
+    "exercises" : [ {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Running in Place (High Knees)"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Squats"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Clams"
+    } ],
+    "title" : "God Legs"
+  }, {
+    "exercises" : [ {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Downward Dog"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Face Plant"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Warrior"
+    } ],
+    "title" : "Morning Stretch"
+  }, {
+    "exercises" : [ {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Running in Place (High Knees)"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Running in Place (High Heels)"
+    }, {
+      "break" : 10,
+      "duration" : 30,
+      "name" : "Jumping Jacks"
+    } ],
+    "title" : "Cardio Burst"
+  }, {
+    "exercises" : [ {
+      "break" : 0,
+      "duration" : 60,
+      "name" : "Jumping Jacks"
+    }, {
+      "break" : 0,
+      "duration" : 60,
+      "name" : "Frontal Jacks"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Squats"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Push Ups"
+    }, {
+      "break" : 0,
+      "duration" : 60,
+      "name" : "Running in Place (High Knees)"
+    }, {
+      "break" : 0,
+      "duration" : 60,
+      "name" : "Running in Place (High Heels)"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Squats"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Push Ups"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Burpees"
+    }, {
+      "break" : 0,
+      "duration" : 60,
+      "name" : "Mountain Climbers"
+    }, {
+      "break" : 0,
+      "duration" : 60,
+      "name" : "Mountain Climbers (Double Leg)"
+    }, {
+      "break" : 0,
+      "duration" : 30,
+      "name" : "Leg Kick Up"
+    }, {
+      "break" : 0,
+      "duration" : 30,
+      "name" : "Shoulder Rotation"
+    }, {
+      "break" : 0,
+      "duration" : 30,
+      "name" : "Elbow Rotation"
+    }, {
+      "break" : 0,
+      "duration" : 30,
+      "name" : "Ankle Rotation"
+    }, {
+      "break" : 0,
+      "duration" : 30,
+      "name" : "Hips Rotation"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Squats"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Push Ups"
+    }, {
+      "break" : 60,
+      "duration" : 10,
+      "name" : "Burpees"
+    }, {
+      "break" : 0,
+      "duration" : 10,
+      "name" : "Jump Squats"
+    } ],
+    "title" : "Muay Thai Warmup"
+  } ]
+}

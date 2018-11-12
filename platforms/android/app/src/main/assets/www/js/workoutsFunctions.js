@@ -88,18 +88,18 @@ function onDeviceReady()
 
   // EXISTING ROUTINE MODIFICATION
   // Compile Routine Overview List.
-  /*if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
+  if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
   {
     var obj = JSON.parse(localStorage.exercise);
     var title = JSON.parse(localStorage.workout);
-    obj.forEach(function(exercise, e)
+    obj.forEach(function(exercise, i)
     {
-      var id = "No" + e;
-      $("#overviewList").append("<li><div class='overviewCard card' id='card" + id + "' onclick='edit(this)'><div class='overviewCardInfo' duration='" + exercise.duration + "' break='" + exercise.break + "'>\n\
+      var delay = i * 0.1;
+      $("#overviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s' onclick='edit(this)'><div class='overviewCardInfo' duration='" + exercise.duration + "' break='" + exercise.break + "'>\n\
       <h3>" + exercise.name + "</h3><p>" + exercise.duration + " sec.</p><p id='right'>Break: " + exercise.break + " sec.</p>\n\
       </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
     });
-  }*/
+  }
 
   // Change name of routine.
   $("#changeName").keydown(function()
