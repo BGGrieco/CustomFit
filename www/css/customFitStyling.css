@@ -326,7 +326,7 @@ a
   position: relative;
   margin: auto;
   width: 96%;
-  top: 24%;
+  top: 22%;
   pointer-events: none;
 }
 
@@ -452,7 +452,7 @@ a
 {
   from
   {
-    bottom: -35%;
+    bottom: -30%;
   }
   to
   {
@@ -480,7 +480,7 @@ a
   }
   to
   {
-    bottom: -35%;
+    bottom: -30%;
   }
 }
 
@@ -1097,6 +1097,7 @@ input[type=text]
   width: 88%;
   height: 40px;
   margin-top: 15px;
+  font-size: 24px;
   display: none;
 }
 
@@ -1108,6 +1109,7 @@ input[type=text]
   width: 70%;
   top: 8px;
   left: 10%;
+  font-size: 24px;
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -1122,7 +1124,7 @@ input[type=text]
   z-index: 1;
 }
 
-#overviewList li
+.overviewList li
 {
   display: block;
   position: relative;
@@ -1213,7 +1215,7 @@ input[type=text]
 #delete
 {
   position: absolute;
-  top: 25px;
+  top: 10px;
   right: 12%;
   pointer-events: initial;
 }
@@ -1252,38 +1254,6 @@ input[type=text]
     opacity: 0;
     height: 0;
   }
-}
-
-/* NEW ROUTINE OVERVIEW */
-#newOverviewList li
-{
-  display: block;
-  position: relative;
-  margin: auto;
-  list-style: none;
-  text-decoration: none;
-}
-
-#newChangeName
-{
-  width: 88%;
-  height: 40px;
-  margin-top: 15px;
-  display: block;
-}
-
-#newOverviewTitle
-{
-  position: relative;
-  color: #58a7dd;
-  text-align: center;
-  width: 70%;
-  top: 8px;
-  left: 10%;
-  display: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* DELETE ROUTINE DIALOGUE */

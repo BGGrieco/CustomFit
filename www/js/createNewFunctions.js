@@ -74,23 +74,38 @@ function onDeviceReady()
   var time = document.getElementById("determineTime");
   var rest = document.getElementById("determineRest");
 
+  var routineNamed;
+
   // Set name of new routine.
-  // $("#newChangeName").keydown(function()
-  // {
-  //   if (event.keyCode === 13)
-  //   {
-  //     var newName = $(this).val()
-  //     localStorage.title = newName;
-  //     $(this).css("display", "none");
-  //     $(this).attr("value", newName);
-  //     $("#newOverviewTitle").css("display", "block");
-  //     $("#newOverviewTitle").text(newName);
-  //     localStorage.newTitle = JSON.stringify(newName);
-  //   }
-  // });
+  $("#changeName").keydown(function()
+  {
+    if (event.keyCode === 13)
+    {
+      var newName = $(this).val();
+      $(this).attr("value", newName);
+      $(this).css("display", "none");
+      $("#overviewTitle").css("display", "block");
+      $("#delete").css("display", "block");
+      $("#overviewTitle").text(newName);
+      localStorage.newTitle = JSON.stringify(newName);
+      routineNamed = true;
+      localStorage.weHaveName = JSON.stringify(routineNamed);
+    }
+  });
+
+  // Determine if routine title exists.
+  var fetchName = JSON.parse(localStorage.weHaveName);
+  if (fetchName === true)
+  {
+    var theName = localStorage.newTitle;
+    $("#overviewTitle").text(theName);
+  }
+  else
+  {
+    $("#overviewTitle").text("Unnamed Routine");
+  }
 
   // Create new routine.
-
   var title = localStorage.newTitle;
   console.log(title);
   $("#newExerciseConfirm").click(function()
@@ -98,10 +113,6 @@ function onDeviceReady()
     var timeValue = time.value;
     var restValue = rest.value;
     var name = $("#infoP").text();
-    // if (localStorage.newTitle !== "Unnamed Routine")
-    // {
-    //   var title = localStorage.newTitle;
-    // }
     var addExercise =
     {
       "name": name,
@@ -141,7 +152,7 @@ function onDeviceReady()
   arr.forEach(function(a, i)
   {
     var delay = i * 0.1;
-    $("#newOverviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s'><div class='overviewCardInfo' duration='" + a.duration + "' break='" + a.break + "'>\n\
+    $(".overviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s'><div class='overviewCardInfo' duration='" + a.duration + "' break='" + a.break + "'>\n\
     <h3>" + a.name + "</h3><p>" + a.duration + " sec.</p><p id='right'>Break: " + a.break + " sec.</p>\n\
     </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
   });

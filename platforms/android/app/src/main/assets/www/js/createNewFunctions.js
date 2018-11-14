@@ -73,14 +73,35 @@ function onDeviceReady()
   // Store slider inputs.
   var time = document.getElementById("determineTime");
   var rest = document.getElementById("determineRest");
-  var title = "Unnamed Routine";
+
+  // Set name of new routine.
+  // $("#newChangeName").keydown(function()
+  // {
+  //   if (event.keyCode === 13)
+  //   {
+  //     var newName = $(this).val()
+  //     localStorage.title = newName;
+  //     $(this).css("display", "none");
+  //     $(this).attr("value", newName);
+  //     $("#newOverviewTitle").css("display", "block");
+  //     $("#newOverviewTitle").text(newName);
+  //     localStorage.newTitle = JSON.stringify(newName);
+  //   }
+  // });
 
   // Create new routine.
+
+  var title = localStorage.newTitle;
+  console.log(title);
   $("#newExerciseConfirm").click(function()
   {
     var timeValue = time.value;
     var restValue = rest.value;
     var name = $("#infoP").text();
+    // if (localStorage.newTitle !== "Unnamed Routine")
+    // {
+    //   var title = localStorage.newTitle;
+    // }
     var addExercise =
     {
       "name": name,
@@ -120,24 +141,9 @@ function onDeviceReady()
   arr.forEach(function(a, i)
   {
     var delay = i * 0.1;
-    console.log(delay);
     $("#newOverviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s'><div class='overviewCardInfo' duration='" + a.duration + "' break='" + a.break + "'>\n\
     <h3>" + a.name + "</h3><p>" + a.duration + " sec.</p><p id='right'>Break: " + a.break + " sec.</p>\n\
     </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
-  });
-
-  // Set name of new routine.
-  $("#newChangeName").keydown(function()
-  {
-    if (event.keyCode === 13)
-    {
-      var newName = $(this).val()
-      $(this).css("display", "none");
-      $(this).attr("value", newName);
-      $("#newOverviewTitle").css("display", "block");
-      $("#newOverviewTitle").text(newName);
-      localStorage.newTitle = JSON.stringify(newName);
-    }
   });
 
   // Miscellaneous functions.
@@ -158,10 +164,11 @@ function onDeviceReady()
   var createdExercise = JSON.parse(localStorage.newRoutine);
   $("#save").click(function()
   {
+    console.log(createdExercise)
     createdExercise.title = localStorage.newTitle;
-    console.log(createdExercise.title);
+    // console.log(createdExercise.title);
     workouts.unshift(createdExercise);
-    console.log(workouts);
+    // console.log(workouts);
   });
 
   // Push new routine to Firebase.

@@ -95,7 +95,7 @@ function onDeviceReady()
     obj.forEach(function(exercise, i)
     {
       var delay = i * 0.1;
-      $("#overviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s' onclick='edit(this)'><div class='overviewCardInfo' duration='" + exercise.duration + "' break='" + exercise.break + "'>\n\
+      $(".overviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s' onclick='edit(this)'><div class='overviewCardInfo' duration='" + exercise.duration + "' break='" + exercise.break + "'>\n\
       <h3>" + exercise.name + "</h3><p>" + exercise.duration + " sec.</p><p id='right'>Break: " + exercise.break + " sec.</p>\n\
       </div><div class='overviewCardOptions'><img src='images/thrash.png' width='23' alt='' /></div></div></li>");
     });
@@ -110,6 +110,7 @@ function onDeviceReady()
       $(this).css("display", "none");
       $(this).attr("value", newName);
       $("#overviewTitle").css("display", "block");
+      $("#delete").css("display", "block");
       $("#overviewTitle").text(newName);
       localStorage.newTitle = newName;
     }
