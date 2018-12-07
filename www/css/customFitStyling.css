@@ -1230,11 +1230,11 @@ input[type=text]
 
 .toDelete
 {
-  -webkit-animation: fadeOut 1s ease-in forwards;
-  -moz-animation: fadeOut 1s ease-in forwards;
-  -o-animation: fadeOut 1s ease-in forwards;
-  -ms-animation: fadeOut 1s ease-in forwards;
-  animation: fadeOut 1s ease-in forwards;
+  -webkit-animation: fadeOut 0.5s ease-in forwards;
+  -moz-animation: fadeOut 0.5s ease-in forwards;
+  -o-animation: fadeOut 0.5s ease-in forwards;
+  -ms-animation: fadeOut 0.5s ease-in forwards;
+  animation: fadeOut 0.5s ease-in forwards;
 }
 
 @keyframes fadeOut

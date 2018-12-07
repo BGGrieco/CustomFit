@@ -106,7 +106,7 @@ function onDeviceReady()
   {
     if (event.keyCode === 13)
     {
-      var newName = $(this).val()
+      var newName = $(this).val();
       $(this).css("display", "none");
       $(this).attr("value", newName);
       $("#overviewTitle").css("display", "block");

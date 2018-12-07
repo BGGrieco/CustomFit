@@ -94,16 +94,16 @@ function onDeviceReady()
   });
 
   // Determine if routine title exists.
-  var fetchName = JSON.parse(localStorage.weHaveName);
-  if (fetchName === true)
-  {
-    var theName = localStorage.newTitle;
-    $("#overviewTitle").text(theName);
-  }
-  else
-  {
-    $("#overviewTitle").text("Unnamed Routine");
-  }
+  // var fetchName = JSON.parse(localStorage.weHaveName);
+  // if (fetchName === true)
+  // {
+  //   var theName = localStorage.newTitle;
+  //   $("#overviewTitle").text(theName);
+  // }
+  // else
+  // {
+  //   $("#overviewTitle").text("Unnamed Routine");
+  // }
 
   // Create new routine.
   var title = localStorage.newTitle;
