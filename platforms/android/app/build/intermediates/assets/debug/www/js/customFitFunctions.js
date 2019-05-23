@@ -8,7 +8,7 @@ if (typeof cordova !== "undefined")
 
 function onDeviceReady()
 {
-  
+
 
   // Set latest workout.
   if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
@@ -87,16 +87,12 @@ function onDeviceReady()
     $(".block").css("display", "none");
   });
 
-  // Re-name existing.
+  // Change routine name.
   $(document).on("click", "#overviewTitle", function()
   {
     $(this).css("display", "none");
+    $("#delete").css("display", "none");
     $("#changeName").css("display", "block");
-  });
-
-  $("#existingOverview").find("input[type=text]", function()
-  {
-    $(this).attr("placeholder", "AYYYY");
   });
 
   // ROUTINE MAKER
@@ -113,18 +109,6 @@ function onDeviceReady()
   {
     $("#specifier").css("display", "none");
     $("#overviewSpecifier").css("display", "none");
-  });
-
-  // Name new routine.
-  $(document).on("click", "#overviewTitle", function()
-  {
-    $(this).css("display", "none");
-    $("#changeName").css("display", "block");
-  });
-
-  $("#existingOverview").find("input[type=text]", function()
-  {
-    $(this).attr("placeholder", "AYYYY");
   });
 
   // VIRTUAL TRAINER OPTIONS
