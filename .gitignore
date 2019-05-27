@@ -12,7 +12,6 @@ Thumbs.db
 package-lock.json
 
 # Build output for cordova
-/www/
 /platforms/android/app/src/main/assets/www/
 /platforms/ios/www/
 /platforms/windows/www/
