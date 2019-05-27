@@ -183,12 +183,9 @@ function onDeviceReady()
   $("#chartOptions").click(function()
   {
     modifyOverlay(3);
-    //setInterval(function()
-    //{
-      $("#chartOptionsDialogue").css("display", "block");
-      $(".navbarBack").css("display", "none");
-      $(".navbarOptions").css("display", "none");
-    //}, 600);
+    $("#chartOptionsDialogue").css("display", "block");
+    $(".navbarBack").css("display", "none");
+    $(".navbarOptions").css("display", "none");
   });
 
   // NAVIGATE PAGES
