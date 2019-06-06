@@ -12,8 +12,10 @@ Thumbs.db
 package-lock.json
 
 # Build output for cordova
-/platforms/android/app/src/main/assets/www/
-/platforms/ios/www/
-/platforms/windows/www/
-/platforms/windows/BundleArtifacts/
-_pkginfo.txt
+platforms/android/app/src/main/assets/www/
+platforms/android/.gradle/4.1/fileHashes/
+platforms/android/.gradle/4.1/taskHistory/
+platforms/android/app/build/intermediates/assets/debug/
+platforms/android/app/build/intermediates/incremental/packageDebug/debug/
+platforms/android/app/build/outputs/apk/debug/
+platforms/android/build/android-profile/
