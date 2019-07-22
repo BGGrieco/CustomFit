@@ -1,21 +1,17 @@
 
-if (typeof cordova !== "undefined")
-{
+if (typeof cordova !== "undefined") {
   document.addEventListener("deviceready", onDeviceReady, false);
-} else {
+}
+else {
   onDeviceReady();
 }
 
-function onDeviceReady()
-{
+function onDeviceReady() {
   // PROGRESS CHART
   // Plug-in to colour chart background.
-  Chart.pluginService.register(
-  {
-    beforeDraw: function (chart, easing)
-    {
-      if (chart.config.options.chartArea && chart.config.options.chartArea.backgroundColor)
-      {
+  Chart.pluginService.register({
+    beforeDraw: function (chart, easing) {
+      if (chart.config.options.chartArea && chart.config.options.chartArea.backgroundColor) {
         var helpers = Chart.helpers;
         var ctx = chart.chart.ctx;
         var chartArea = chart.chartArea;
@@ -36,25 +32,21 @@ function onDeviceReady()
   });
 
   // Fetch date via moment.js
-  function newDate(days)
-  {
+  function newDate(days) {
     return moment().add(days, "d");
   };
 
   var strength = JSON.parse(localStorage.strength);
   var cardio = JSON.parse(localStorage.cardio);
 
-  var config =
-  {
+  var config = {
     type: 'line',
-    data:
-    {
+    data: {
       // Use fetched date to track progress over time.
       labels: [newDate(-4), newDate(-3), newDate(2), newDate(3), newDate(4), newDate(5), newDate(6)],
 
       // Feed data to chart.
-      datasets:
-      [{
+      datasets: [{
         label: "Strength",
         data: strength,
         backgroundColor: "rgba(0, 0, 255, 0)",
@@ -71,38 +63,29 @@ function onDeviceReady()
     },
 
     // Configure axis.
-    options:
-    {
-      chartArea:
-      {
+    options: {
+      chartArea: {
         backgroundColor: "#ffffff",
       },
-      layout:
-      {
-        padding:
-        {
+      layout: {
+        padding: {
           left: 20,
           right: 0,
           top: 0,
           bottom: 0
         }
       },
-      scales:
-      {
-        xAxes:
-        [{
-          ticks:
-          {
+      scales: {
+        xAxes: [{
+          ticks: {
             suggestedMax: 4,
             suggestedMin: 4,
             stepSize: 1
           },
           type: "time",
-          time:
-          {
+          time: {
             unit: 'day',
-            displayFormats:
-            {
+            displayFormats: {
               'hour': 'MMM DD',
               'day': 'MMM DD',
               'week': 'MMM DD',
@@ -111,10 +94,8 @@ function onDeviceReady()
             }
           }
         }],
-        yAxes:
-        [{
-          ticks:
-          {
+        yAxes: [{
+          ticks: {
             max: 4,
             min: 0,
             stepSize: 1
@@ -131,8 +112,7 @@ function onDeviceReady()
   Chart.defaults.global.defaultFontSize = 10;
 
   // Hide Chart options.
-  $("#confirmSettings").click(function()
-  {
+  $("#confirmSettings").click(function() {
     setXAxis();
     $(".block").css("display", "none");
     $("#chartOptionsDialogue").css("display", "none");
@@ -142,20 +122,16 @@ function onDeviceReady()
   });
 
   // Set options for progress chart.
-  function setXAxis()
-  {
-    if (document.getElementById("daily").checked === true)
-    {
+  function setXAxis() {
+    if (document.getElementById("daily").checked === true) {
       chart.options.scales.xAxes[0].time.unit = "hour";
       chart.update();
     }
-    else if (document.getElementById("weekly").checked === true)
-    {
+    else if (document.getElementById("weekly").checked === true) {
       chart.options.scales.xAxes[0].time.unit = "day";
       chart.update();
     }
-    else
-    {
+    else {
       chart.options.scales.xAxes[0].time.unit = "week";
       chart.update();
     }
@@ -163,14 +139,12 @@ function onDeviceReady()
 
   // CALENDAR SECTION
   // Display calendar.
-  $("#showCalendar").click(function()
-  {
+  $("#showCalendar").click(function() {
     $("#containCalendar").css("display", "block");
   });
 
   // Hide Calendar.
-  $("#closeCalendar").click(function()
-  {
+  $("#closeCalendar").click(function() {
     $("#containCalendar").css("display", "none");
   });
 };

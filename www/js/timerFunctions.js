@@ -1,7 +1,3 @@
-/**
-* INITIALISE WORKOUT SECTION
-*
-*/
 // WORKOUT INFORMATION SECTION
 // Set up variables
 var label = document.getElementById("exerciseLabel");
@@ -17,31 +13,26 @@ var workout = JSON.parse(localStorage.workout);
 // Initialise virtual trainer.
 beginWorkout();
 
-function beginWorkout()
-{
+function beginWorkout() {
   routine.innerHTML = "Routine: " + workout.title;
 
   // Give 3 seconds for user to prepare.
   var ready = 4;
-  var readyTimer = setInterval(function()
-  {
+  var readyTimer = setInterval(function() {
     ready--;
     document.getElementById("readyCount").textContent = ready;
-    if (ready === 0)
-    {
+    if (ready === 0) {
       document.getElementById("readyCount").textContent = "GO!";
       document.getElementById("readyCount").style.color = "#58a7dd";
       soundPlay("sound/short.mp3");
     }
-    else if(ready < 0)
-    {
+    else if(ready < 0) {
       clearInterval(readyTimer);
     }
   },1000);
 
   // Hide ready screen and cycle through selected workout.
-  setTimeout(function()
-  {
+  setTimeout(function() {
     init();
     $(".getReady").hide();
     document.getElementById("pauseButton").style.display = "block";
@@ -53,8 +44,7 @@ function beginWorkout()
 *
 * @return {void}
 */
-function init()
-{
+function init() {
   loop();
   button.addEventListener("click", toggle);
 }
@@ -64,14 +54,11 @@ function init()
 *
 * @return {void}
 */
-function toggle()
-{
-  if (playing)
-  {
+function toggle() {
+  if (playing) {
     pause();
   }
-  else
-  {
+  else {
     loop();
   }
 }
@@ -81,13 +68,11 @@ function toggle()
 *
 * @return {void}
 */
-function pause()
-{
+function pause() {
   playing = false;
   setLabel("Paused");
   //setCounter('--')
-  if (countdownTimer)
-  {
+  if (countdownTimer) {
     clearTimeout(countdownTimer); // FIGURE OUT HOW NOT TO CLEAR
   }
 }
@@ -98,8 +83,7 @@ function pause()
 *
 * @return {void}
 */
-function loop()
-{
+function loop() {
   playing = true;
 
   // Change button label.
@@ -109,17 +93,14 @@ function loop()
   var exercise = workout.exercises[current];
 
   // If out of the exercises Array's bounds, call 'done'.
-  if (!exercise)
-  {
+  if (!exercise) {
     return done();
   }
   // Otherwise run countdown and update UI.
-  countdown(exercise.duration, exercise.name, function ()
-  {
+  countdown(exercise.duration, exercise.name, function() {
     $("#timerImage").show();
     soundPlay("sound/long.mp3");
-    countdown(exercise.break, "Break", function ()
-    {
+    countdown(exercise.break, "Break", function() {
       $("#timerImage").hide();
       soundPlay("sound/short.mp3");
       // Next exercise.
@@ -135,8 +116,7 @@ function loop()
 *
 * @return {void}
 */
-function done()
-{
+function done() {
   pause();
   document.getElementById("feedbackScreen").style.display = "block";
 }
@@ -149,20 +129,17 @@ function done()
 * @param  {Function} callback
 * @return {void}
 */
-function countdown(seconds, label, callback)
-{
+function countdown(seconds, label, callback) {
   setLabel(label);
   setCounter(seconds);
 
   // Set timeout to next second.
-  countdownTimer = setTimeout(function ()
-  {
+  countdownTimer = setTimeout(function() {
     // Decrease seconds.
     seconds--;
 
     // Check whether the countdown is over - execute callback if so.
-    if (seconds <= 0)
-    {
+    if (seconds <= 0) {
       return callback();
     }
 
@@ -177,8 +154,7 @@ function countdown(seconds, label, callback)
 * @param  {Number} val
 * @return {void}
 */
-function setCounter(val)
-{
+function setCounter(val) {
   counter.innerHTML = val;
 }
 
@@ -188,13 +164,10 @@ function setCounter(val)
 * @param  {String} text
 * @return {void}
 */
-function setLabel(text)
-{
-  if (label.textContent === text)
-  {
+function setLabel(text) {
+  if (label.textContent === text) {
     return;
   }
-
   label.innerHTML = text;
 }
 
@@ -204,30 +177,25 @@ function setLabel(text)
 * @param  {String} text
 * @return {void}
 */
-function setButtonText(label)
-{
+function setButtonText(label) {
 //  button.innerHTML = label;
 }
 
 // Change mute option image.
-$("#muteIt").click(function()
-{
+$("#muteIt").click(function() {
   changeImage();
 });
 
 var newsrc = "muted";
 
-function changeImage()
-{
-  if ( newsrc === "muted" )
-  {
+function changeImage() {
+  if ( newsrc === "muted" ) {
     document.images["pic"].src = "images/unMute.png";
     document.images["pic"].width = "32";
     document.images["pic"].style.bottom = "3px";
     newsrc = "unMuted";
   }
-  else
-  {
+  else {
     document.images["pic"].src = "images/mute.png";
     document.images["pic"].width = "37";
     document.images["pic"].style.bottom = "0px";
@@ -235,8 +203,7 @@ function changeImage()
   }
 }
 
-function soundPlay(src)
-{
+function soundPlay(src) {
   var audioElement = document.getElementById("player-src");
   audioElement.src = src;
   var myAudio = document.getElementById("player");
@@ -244,8 +211,7 @@ function soundPlay(src)
   myAudio.play();
 }
 
-function getFeedback()
-{
+function getFeedback() {
   var theStrength = document.getElementById("feedbackSliderOne");
   var theCardio = document.getElementById("feedbackSliderTwo");
 

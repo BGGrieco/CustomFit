@@ -1,23 +1,18 @@
 
-if (typeof cordova !== "undefined")
-{
+if (typeof cordova !== "undefined") {
   document.addEventListener("deviceready", onDeviceReady, false)
 }
-else
-{
+else {
   onDeviceReady();
 }
 
 
-function onDeviceReady()
-{
+function onDeviceReady() {
   var workouts = JSON.parse(localStorage.workouts);
 
   // Fetch the right object on click.
-  function handleButtonClick(event)
-  {
-    if (event.target != event.currentTarget)
-    {
+  function handleButtonClick(event) {
+    if (event.target != event.currentTarget) {
       var theWorkout = (workouts.find(workout => workout.title === event.currentTarget.dataset.workout));
       console.log(theWorkout);
       var theExercises = theWorkout.exercises;
@@ -29,8 +24,7 @@ function onDeviceReady()
   }
 
   // Create Routine Card with appropriate parameters.
-  function createCards(indexNumber, routine, icons, time)
-  {
+  function createCards(indexNumber, routine, icons, time) {
     var delay = indexNumber * 0.1;
     return `
     <li>
@@ -50,50 +44,41 @@ function onDeviceReady()
     `
   }
 
-  workouts.forEach(function(a, i)
-  {
+  workouts.forEach(function(a, i) {
     var routine = a.title;
     var indexNumber = i;
     var time;
     var exercises = a.exercises;
     var icons;
-    if (routine === "God Legs")
-    {
+    if (routine === "God Legs") {
       icons = "<img src='images/legs.png' width='18' alt='' /><img src='images/cardio.png' width='30' alt='' />"
       time = 7;
     }
-    else if (routine === "Morning Stretch")
-    {
+    else if (routine === "Morning Stretch") {
       icons = "<img src='images/stretch.png' width='50' alt='' />"
       time = 5;
     }
-    else if (routine === "Cardio Burst")
-    {
+    else if (routine === "Cardio Burst") {
       icons = "<img src='images/cardio.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' />"
       time = 7;
     }
-    else if (routine === "Full Body" || "Muay Thai Warmup")
-    {
+    else if (routine === "Full Body" || "Muay Thai Warmup") {
       icons = "<img src='images/thorso.png' width='30' alt='' /><img src='images/legs.png' width='18' alt='' /><img src='images/cardio.png' width='30' alt='' /><img src='images/stretch.png' width='50' alt='' />"
       time = 10;
     }
-    else
-    {
+    else {
       icons = "<img src='images/thorso.png' width='30' alt='' />"
       time = 1;
     }
-
     $("#cardList").append(createCards(indexNumber, routine, icons, time));
   });
 
   // EXISTING ROUTINE MODIFICATION
   // Compile Routine Overview List.
-  if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined")
-  {
+  if (typeof localStorage.exercise !== "undefined" && typeof localStorage.workout !== "undefined") {
     var obj = JSON.parse(localStorage.exercise);
     var title = JSON.parse(localStorage.workout);
-    obj.forEach(function(exercise, i)
-    {
+    obj.forEach(function(exercise, i) {
       var delay = i * 0.1;
       $(".overviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s' onclick='edit(this)'><div class='overviewCardInfo' duration='" + exercise.duration + "' break='" + exercise.break + "'>\n\
       <h3>" + exercise.name + "</h3><p>" + exercise.duration + " sec.</p><p id='right'>Break: " + exercise.break + " sec.</p>\n\
@@ -102,10 +87,8 @@ function onDeviceReady()
   }
 
   // Change name of routine.
-  $("#changeName").keydown(function()
-  {
-    if (event.keyCode === 13)
-    {
+  $("#changeName").keydown(function() {
+    if (event.keyCode === 13) {
       var newName = $(this).val();
       $(this).css("display", "none");
       $(this).attr("value", newName);
@@ -117,8 +100,7 @@ function onDeviceReady()
   });
 
   // Show specifier.
-  $(document).on("click", ".overviewCardInfo", function()
-  {
+  $(document).on("click", ".overviewCardInfo", function() {
     $("#overviewSpecifier").css("display", "block");
     $("#infoP").text($(this).find("h3").text());
 
@@ -138,8 +120,7 @@ function onDeviceReady()
   var rest = document.getElementById("determineRest");
 
   // Write data to firebase: existing routine.
-  $("#exerciseConfirm").click(function()
-  {
+  $("#exerciseConfirm").click(function() {
     var timeValue = time.value;
     var restValue = rest.value;
     localStorage.theDuration = timeValue;
@@ -148,8 +129,7 @@ function onDeviceReady()
   });
 
   // Delete Routine.
-  $("#confirmDelete").click(function()
-  {
+  $("#confirmDelete").click(function() {
     $("#deleteRoutine").css("display", "none");
     $(".block").css("display", "none");
     $(window).scrollTop(0);
@@ -175,16 +155,14 @@ function onDeviceReady()
   // });
 
   // Miscellaneous functions.
-  var handleThrashClick = function(event)
-  {
+  var handleThrashClick = function(event) {
     $(event.currentTarget).parents("li").toggleClass("toDelete");
   };
 
   $(document).on("click", ".overviewCardOptions", handleThrashClick);
   $(".card").on("click", handleButtonClick);
 
-  if (typeof title !== "undefined")
-  {
+  if (typeof title !== "undefined") {
     $("#overviewTitle").html(title.title);
     $("#changeName").attr("value", title.title);
   }

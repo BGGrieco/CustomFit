@@ -1051,7 +1051,7 @@ a
 #cancel
 {
   position: absolute;
-  top: 87%;
+  top: 84%;
   left: 0;
 }
 
@@ -2033,7 +2033,7 @@ input[type=text]
   left: -2px;
 }
 
-.testOne a:hover
+.testOne #navOne:hover
 {
   background-color: #6eadea;
   border: none;
@@ -2045,7 +2045,7 @@ input[type=text]
   animation: whopL 0.1s ease forwards;
 }
 
-.testTwo a:hover
+.testTwo #navTwo:hover
 {
   background-color: #6eadea;
   border: none;
@@ -2057,7 +2057,7 @@ input[type=text]
   animation: whopC 0.1s ease forwards;
 }
 
-.testThree a:hover
+.testThree #navThree:hover
 {
   background-color: #6eadea;
   border: none;
