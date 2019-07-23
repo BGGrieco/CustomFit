@@ -901,7 +901,7 @@ a
   margin: 0 0 6% 6%;
   text-align: center;
   transform: scale(0, 0);
-  animation: popIn 0.2s ease-out forwards;
+  animation: popIn 0.3s linear forwards;
 }
 
 @keyframes popIn
