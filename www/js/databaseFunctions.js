@@ -1,5 +1,5 @@
 
-if (typeof cordova !== "undefined") {
+if (typeof cordova !== "undefined"){
   document.addEventListener("deviceready", onDeviceReady, false)
 }
 else {
@@ -7,7 +7,7 @@ else {
 }
 
 
-function onDeviceReady() {
+function onDeviceReady(){
   // Configure Firebase.
   var config = {
     apiKey: "AIzaSyCogF5kaBbbs-2ME020FoTMd17_2ylydq4",
@@ -27,8 +27,8 @@ function onDeviceReady() {
   // Sync with Firebase on launch.
   updateData();
 
-  function updateData() {
-    if (localStorage.getItem("updated") === null) {
+  function updateData(){
+    if (localStorage.getItem("updated") === null){
       dbRef.on("value", snap => {
         var value = JSON.stringify(snap.val());
         localStorage.workouts = value;
@@ -41,16 +41,16 @@ function onDeviceReady() {
   // LOADING BAR ANIMATION
   load();
 
-  setTimeout(function () {
+  setTimeout(function (){
     $("#loading").css("display", "none");
   }, 100);
 
-  function load() {
+  function load(){
     var bar = $("#progressBar");
     var width = 1;
     var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 99) {
+    function frame(){
+      if (width >= 99){
         clearInterval(id);
       }
       else {

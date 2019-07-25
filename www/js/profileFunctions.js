@@ -1,17 +1,17 @@
 
-if (typeof cordova !== "undefined") {
+if (typeof cordova !== "undefined"){
   document.addEventListener("deviceready", onDeviceReady, false);
 }
 else {
   onDeviceReady();
 }
 
-function onDeviceReady() {
+function onDeviceReady(){
   // PROGRESS CHART
   // Plug-in to colour chart background.
   Chart.pluginService.register({
-    beforeDraw: function (chart, easing) {
-      if (chart.config.options.chartArea && chart.config.options.chartArea.backgroundColor) {
+    beforeDraw: function (chart, easing){
+      if (chart.config.options.chartArea && chart.config.options.chartArea.backgroundColor){
         var helpers = Chart.helpers;
         var ctx = chart.chart.ctx;
         var chartArea = chart.chartArea;
@@ -32,7 +32,7 @@ function onDeviceReady() {
   });
 
   // Fetch date via moment.js
-  function newDate(days) {
+  function newDate(days){
     return moment().add(days, "d");
   };
 
@@ -112,7 +112,7 @@ function onDeviceReady() {
   Chart.defaults.global.defaultFontSize = 10;
 
   // Hide Chart options.
-  $("#confirmSettings").click(function() {
+  $("#confirmSettings").click(function(){
     setXAxis();
     $(".block").css("display", "none");
     $("#chartOptionsDialogue").css("display", "none");
@@ -122,12 +122,12 @@ function onDeviceReady() {
   });
 
   // Set options for progress chart.
-  function setXAxis() {
-    if (document.getElementById("daily").checked === true) {
+  function setXAxis(){
+    if (document.getElementById("daily").checked === true){
       chart.options.scales.xAxes[0].time.unit = "hour";
       chart.update();
     }
-    else if (document.getElementById("weekly").checked === true) {
+    else if (document.getElementById("weekly").checked === true){
       chart.options.scales.xAxes[0].time.unit = "day";
       chart.update();
     }
@@ -139,12 +139,12 @@ function onDeviceReady() {
 
   // CALENDAR SECTION
   // Display calendar.
-  $("#showCalendar").click(function() {
+  $("#showCalendar").click(function(){
     $("#containCalendar").css("display", "block");
   });
 
   // Hide Calendar.
-  $("#closeCalendar").click(function() {
+  $("#closeCalendar").click(function(){
     $("#containCalendar").css("display", "none");
   });
 };

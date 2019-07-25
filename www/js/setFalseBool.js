@@ -1,5 +1,5 @@
 setIt();
 
-function setIt() {
+function setIt(){
   localStorage.makingNew = "false";
 }

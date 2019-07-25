@@ -1,17 +1,17 @@
 
-if (typeof cordova !== "undefined") {
+if (typeof cordova !== "undefined"){
   document.addEventListener("deviceready", onDeviceReady, false)
 }
 else {
   onDeviceReady();
 }
 
-function onDeviceReady() {
+function onDeviceReady(){
   var workouts = JSON.parse(localStorage.workouts);
 
   var exercises = ["Push Ups", "Plank", "Sit Ups", "Leg Ups", "Russian Twists", "Back Raises", "Burpees", "Mountain Climbers"];
 
-  function createCards(indexNumber, exercise, image) {
+  function createCards(indexNumber, exercise, image){
     var delay = indexNumber * 0.05;
     return `
     <div class="exercise card" style="animation-delay: ${delay}s">
@@ -23,12 +23,12 @@ function onDeviceReady() {
     `
   }
 
-  exercises.forEach(function(a, i) {
+  exercises.forEach(function(a, i){
     var exercise = a;
     var indexNumber = i;
     var image;
 
-    switch(exercise) {
+    switch(exercise){
       case "Push Ups":
         image = "<img src='images/pushUps.png' width='110' alt='' />";
         break;
@@ -71,8 +71,8 @@ function onDeviceReady() {
   var routineNamed;
 
   // Set name of new routine.
-  $("#changeName").keydown(function() {
-    if (event.keyCode === 13) {
+  $("#changeName").keydown(function(){
+    if (event.keyCode === 13){
       var newName = $(this).val();
       $(this).attr("value", newName);
       $(this).css("display", "none");
@@ -100,7 +100,7 @@ function onDeviceReady() {
   // Create new routine.
   var title = localStorage.newTitle;
   console.log(title);
-  $("#newExerciseConfirm").click(function() {
+  $("#newExerciseConfirm").click(function(){
     var timeValue = time.value;
     var restValue = rest.value;
     var name = $("#infoP").text();
@@ -124,7 +124,7 @@ function onDeviceReady() {
       ]
     };
 
-    if (localStorage.makingNew === "false") {
+    if (localStorage.makingNew === "false"){
       localStorage.newRoutine = JSON.stringify(newRoutine);
     }
     else {
@@ -138,7 +138,7 @@ function onDeviceReady() {
   var newObj = JSON.parse(localStorage.newRoutine);
   var arr = newObj.exercises;
   var newTitle = newObj.title;
-  arr.forEach(function(a, i) {
+  arr.forEach(function(a, i){
     var delay = i * 0.1;
     $(".overviewList").append("<li><div class='overviewCard card' style='animation-delay: " + delay + "s'><div class='overviewCardInfo' duration='" + a.duration + "' break='" + a.break + "'>\n\
     <h3>" + a.name + "</h3><p>" + a.duration + " sec.</p><p id='right'>Break: " + a.break + " sec.</p>\n\
@@ -146,20 +146,20 @@ function onDeviceReady() {
   });
 
   // Miscellaneous functions.
-  var handleThrashClick = function(event) {
+  var handleThrashClick = function(event){
     $(event.currentTarget).parents("li").toggleClass("toDelete");
   };
 
   $(document).on("click", ".overviewCardOptions", handleThrashClick);
   $("#newOverviewTitle").html(newTitle);
   $("#loadingSquare").css("display", "none");
-  $("#confirm").click(function() {
+  $("#confirm").click(function(){
     window.location.href = "routines.html";
   });
 
   // Push new routine to Routines array.
   var createdExercise = JSON.parse(localStorage.newRoutine);
-  $("#save").click(function() {
+  $("#save").click(function(){
     console.log(createdExercise)
     createdExercise.title = localStorage.newTitle;
     // console.log(createdExercise.title);
