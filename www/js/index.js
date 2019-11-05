@@ -1,17 +1,17 @@
 var app = {
     // Application Constructor
-    initialize: function(){
+    initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
-    onDeviceReady: function(){
+    onDeviceReady: function() {
         this.receivedEvent('deviceready');
         StatusBar.backgroundColorByHexString("#CF4D4D");
       }
     },
 
     // Update DOM on a Received Event
-    receivedEvent: function(id){
+    receivedEvent: function(id) {
     }
 };
 
