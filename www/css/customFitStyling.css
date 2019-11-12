@@ -1,11 +1,9 @@
-@font-face
-{
+@font-face {
   font-family: "Roboto";
   src: url("font/roboto.ttf") format("truetype");
 }
 
-body
-{
+body {
   position: relative;
   background-color: #f0f0f0;
   font-family: "Roboto";
@@ -14,77 +12,67 @@ body
   padding: 0;
 }
 
-h1, h2, h3
-{
+h1,
+h2,
+h3 {
   color: #202020;
 }
 
-p
-{
+p {
   text-align: center;
   font-size: 20px;
   line-height: 12px;
   color: #606060;
 }
 
-a
-{
+a {
   text-decoration: none;
 }
 
-*:focus
-{
+*:focus {
   outline: none;
   box-shadow: none;
   border: none;
 }
 
-*:active
-{
+*:active {
   outline: none;
   box-shadow: none;
   border: none;
 }
 
 /* RIPPLE EFFECT SECTION */
-.rippleButton
-{
+.rippleButton {
   background-position: center;
   transition: background 800ms;
 }
 
-.rippleButton:hover
-{
+.rippleButton:hover {
   background: #f0f0f0 radial-gradient(circle, transparent 1%, #f0f0f0 1%) center/15000%;
 }
 
-.rippleButton:active
-{
-  background-color: rgba(0, 0, 0, 0.1 );
+.rippleButton:active {
+  background-color: rgba(0, 0, 0, 0.1);
   background-size: 100%;
   transition: background 0s;
 }
 
-.rippleTab
-{
+.rippleTab {
   background-position: center;
   transition: background 800ms;
 }
 
-.rippleTab:hover
-{
+.rippleTab:hover {
   background: #fafafa radial-gradient(circle, transparent 1%, #fafafa 1%) center/15000%;
 }
 
-.rippleTab:active
-{
-  background-color: rgba(0, 0, 0, 0.1 );
+.rippleTab:active {
+  background-color: rgba(0, 0, 0, 0.1);
   background-size: 100%;
   transition: background 0s;
 }
 
-.navbarBack
-{
+.navbarBack {
   display: none;
   position: absolute;
   left: 6%;
@@ -95,8 +83,7 @@ a
   z-index: 4;
 }
 
-.navbarOptions
-{
+.navbarOptions {
   display: none;
   position: absolute;
   right: 6%;
@@ -107,34 +94,29 @@ a
   z-index: 4;
 }
 
-.navbarRipple
-{
+.navbarRipple {
   background-position: center;
   transition: background 800ms;
 }
 
-.navbarRipple:hover
-{
+.navbarRipple:hover {
   background: #d36363 radial-gradient(circle, transparent 1%, #d36363 1%) center/15000%;
 }
 
-.navbarRipple:active
-{
-  background-color: rgba(255, 255, 255, 0.3 );
+.navbarRipple:active {
+  background-color: rgba(255, 255, 255, 0.3);
   background-size: 100%;
   transition: background 0s;
 }
 
-.backArrow
-{
+.backArrow {
   display: block;
   position: relative;
   margin: auto;
   top: 9px;
 }
 
-.cog
-{
+.cog {
   display: block;
   position: relative;
   margin: auto;
@@ -146,8 +128,7 @@ a
 *
 */
 /* APP BARS SECTION */
-.header
-{
+.header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -157,18 +138,15 @@ a
   z-index: 4;
 }
 
-.header p
-{
+.header p {
   color: #ffffff;
 }
 
-#info
-{
+#info {
   text-overflow: ellipsis;
 }
 
-.footer
-{
+.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -182,8 +160,7 @@ a
 *
 */
 /* ADAPTIVE CONTAINER FOR HOME PAGE */
-.mainSquare
-{
+.mainSquare {
   position: relative;
   margin: auto;
   width: 40%;
@@ -191,67 +168,57 @@ a
   pointer-events: none;
 }
 
-.mainSquare:before
-{
+.mainSquare:before {
   content: "";
   display: block;
   padding-top: 100%;
 }
 
-.mainSquare img
-{
+.mainSquare img {
   width: 100%;
 }
 
-#img
-{
+#img {
   position: absolute;
   top: 0;
 }
 
-#workout
-{
+#workout {
   position: relative;
   text-align: center;
   top: 60px;
 }
 
 /* BUTTONS SECTION */
-#mainButtonsContainer
-{
+#mainButtonsContainer {
   position: fixed;
   width: 100%;
   height: 205px;
   bottom: 0;
 }
 
-.mainButton
-{
+.mainButton {
   width: 100%;
   height: 80px;
   border-top: solid 1px #d0d0d0;
 }
 
-.mainButton img
-{
+.mainButton img {
   position: absolute;
   left: 2%;
   top: 16%;
 }
 
-#weight
-{
+#weight {
   top: 29px;
   left: 4.5%;
 }
 
-#stats
-{
+#stats {
   left: 5%;
 }
 
-.mainButton p
-{
+.mainButton p {
   position: absolute;
   text-align: left;
   top: 10px;
@@ -259,28 +226,24 @@ a
   font-size: 24px;
 }
 
-#change
-{
+#change {
   position: absolute;
   top: 0;
 }
 
-#view
-{
+#view {
   position: absolute;
   top: 80px;
 }
 
-.arrow
-{
+.arrow {
   position: absolute;
   top: 40%;
   left: 90%;
 }
 
 /* LATEST WORKOUT */
-#latest
-{
+#latest {
   position: relative;
   text-align: center;
   top: 100px;
@@ -292,15 +255,13 @@ a
 *
 */
 /* BACK BUTTON STYLE FOR WHOLE APP */
-.backButton
-{
+.backButton {
   position: absolute;
   left: 8%;
   bottom: 13px;
 }
 
-.timerBackButton
-{
+.timerBackButton {
   position: fixed;
   left: 8%;
   bottom: 6%;
@@ -311,8 +272,7 @@ a
 *
 */
 /* FIXED CONTAINER FOR RADIAL MENU SECTION */
-#fixIt
-{
+#fixIt {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -321,8 +281,7 @@ a
 }
 
 /* ADAPTIVE CONTAINER FOR RADIAL MENU SECTION */
-.square
-{
+.square {
   position: relative;
   margin: auto;
   width: 96%;
@@ -330,16 +289,14 @@ a
   pointer-events: none;
 }
 
-.square:before
-{
+.square:before {
   content: "";
   display: block;
   padding-top: 100%;
 }
 
 /* FAB SECTION WITH ONCLICK ANIMATIONS */
-#fab
-{
+#fab {
   position: absolute;
   width: 100%;
   height: 56px;
@@ -349,15 +306,13 @@ a
   display: block;
 }
 
-#plusContain
-{
+#plusContain {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-#plus
-{
+#plus {
   display: block;
   position: relative;
   margin: auto;
@@ -369,8 +324,7 @@ a
   transform: translateY(-50%);
 }
 
-.rotate
-{
+.rotate {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -378,22 +332,19 @@ a
   transition: all 0.2s ease;
 }
 
-.rotateActive
-{
+.rotateActive {
   transform: rotate(45deg);
 }
 
 /* FAB ANIMATION SECTION */
-.container
-{
+.container {
   position: absolute;
   top: 0;
   width: 56px;
   height: 100%;
 }
 
-.dotUp
-{
+.dotUp {
   -webkit-animation: yAxisUp 0.2s ease-in forwards, colorDrain 0.2s ease-out forwards;
   -moz-animation: yAxisUp 0.2s ease-in forwards, colorDrain 0.2s ease-out forwards;
   -o-animation: yAxisUp 0.2s ease-in forwards, colorDrain 0.2s ease-out forwards;
@@ -401,8 +352,7 @@ a
   animation: yAxisUp 0.2s ease-in forwards, colorDrain 0.2s ease-out forwards;
 }
 
-.containerUp
-{
+.containerUp {
   -webkit-animation: xAxisUp 0.2s ease-out forwards;
   -moz-animation: xAxisUp 0.2s ease-out forwards;
   -o-animation: xAxisUp 0.2s ease-out forwards;
@@ -410,8 +360,7 @@ a
   animation: xAxisUp 0.2s ease-out forwards;
 }
 
-.dotDown
-{
+.dotDown {
   -webkit-animation: yAxisDown 0.2s ease-out forwards, colorAdd 0.2s ease-out forwards;
   -moz-animation: yAxisDown 0.2s ease-out forwards, colorAdd 0.2s ease-out forwards;
   -o-animation: yAxisDown 0.2s ease-out forwards, colorAdd 0.2s ease-out forwards;
@@ -419,8 +368,7 @@ a
   animation: yAxisDown 0.2s ease-out forwards, colorAdd 0.2s ease-out forwards;
 }
 
-.containerDown
-{
+.containerDown {
   -webkit-animation: xAxisDown 0.2s ease-in forwards;
   -moz-animation: xAxisDown 0.2s ease-in forwards;
   -o-animation: xAxisDown 0.2s ease-in forwards;
@@ -428,18 +376,15 @@ a
   animation: xAxisDown 0.2s ease-in forwards;
 }
 
-.lighten
-{
+.lighten {
   animation: lightenPlus 0.2s ease-out forwards;
 }
 
-.darken
-{
+.darken {
   animation: darkenPlus 0.2s ease-out forwards;
 }
 
-#fab:active
-{
+#fab:active {
   -webkit-transform: translate(-1px, -1px);
   -moz-transform: translate(-1px, -1px);
   -o-transform: translate(-1px, -1px);
@@ -448,121 +393,104 @@ a
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes yAxisUp
-{
-  from
-  {
+@keyframes yAxisUp {
+  from {
     bottom: -30%;
   }
-  to
-  {
+
+  to {
     bottom: 43%;
   }
 }
 
-@keyframes xAxisUp
-{
-  from
-  {
+@keyframes xAxisUp {
+  from {
     left: 82%;
   }
-  to
-  {
+
+  to {
     left: 42%;
   }
 }
 
-@keyframes yAxisDown
-{
-  from
-  {
+@keyframes yAxisDown {
+  from {
     bottom: 43%;
   }
-  to
-  {
+
+  to {
     bottom: -30%;
   }
 }
 
-@keyframes xAxisDown
-{
-  from
-  {
+@keyframes xAxisDown {
+  from {
     left: 42%;
   }
-  to
-  {
+
+  to {
     left: 82%;
   }
 }
 
-@keyframes colorAdd
-{
-  0%
-  {
+@keyframes colorAdd {
+  0% {
     background-color: #fafafa;
   }
-  20%
-  {
+
+  20% {
     background-color: #6eadea;
   }
-  100%
-  {
+
+  100% {
     background-color: #6eadea;
   }
 }
 
-@keyframes colorDrain
-{
-  0%
-  {
+@keyframes colorDrain {
+  0% {
     background-color: #6eadea;
   }
-  80%
-  {
+
+  80% {
     background-color: #6eadea;
   }
-  100%
-  {
+
+  100% {
     background-color: #fafafa;
   }
 }
 
-@keyframes lightenPlus
-{
-  0%
-  {
+@keyframes lightenPlus {
+  0% {
     filter: invert(65%);
   }
-  20%
-  {
+
+  20% {
     filter: invert(0%);
   }
-  100%
-  {
+
+  100% {
     filter: invert(0%);
   }
 }
 
-@keyframes darkenPlus
-{
-  0%
-  {
+@keyframes darkenPlus {
+  0% {
     filter: invert(0%);
   }
-  80%
-  {
+
+  80% {
     filter: invert(0%);
   }
-  100%
-  {
+
+  100% {
     filter: invert(65%);
   }
 }
 
 /* RADIAL BUTTONS SECTION */
-.tab
-{
+.tab {
   text-align: center;
   border-radius: 50%;
   width: 30%;
@@ -578,8 +506,7 @@ a
   opacity: 0;
 }
 
-.tab a
-{
+.tab a {
   position: absolute;
   left: 0;
   width: 100%;
@@ -587,149 +514,124 @@ a
   border-radius: 50%;
 }
 
-#chest
-{
+#chest {
   position: absolute;
   top: 0;
   left: 34.5%;
 }
 
-#stretch
-{
+#stretch {
   position: absolute;
   top: 35%;
   right: 0;
 }
 
-#cardio
-{
+#cardio {
   position: absolute;
   bottom: 0;
   left: 34.5%;
 }
 
-#legs
-{
+#legs {
   position: absolute;
   top: 35%;
   left: 0;
 }
 
 /* RADIAL BUTTONS ICONS */
-#chest img
-{
+#chest img {
   position: relative;
   top: 22%;
   width: 50%;
 }
 
-#stretch img
-{
+#stretch img {
   width: 65%;
 }
 
-#cardio img
-{
+#cardio img {
   width: 55%;
 }
 
-#legs img
-{
+#legs img {
   width: 33%;
 }
 
-.iconButton
-{
+.iconButton {
   position: relative;
   margin: auto;
   top: 25%;
 }
 
 /* RADIAL BUTTONS APPEAR ANIMATION SECTION */
-.bigOneOn
-{
+.bigOneOn {
   animation: appear 0.15s ease forwards, up 0.2s ease forwards, appearFade 0.1s ease forwards;
   animation-delay: 0.15s;
 }
 
-.bigTwoOn
-{
+.bigTwoOn {
   animation: appear 0.15s ease forwards, toRight 0.2s ease forwards, appearFade 0.1s ease forwards;
   animation-delay: 0.15s;
 }
 
-.bigThreeOn
-{
+.bigThreeOn {
   animation: appear 0.15s ease forwards, down 0.2s ease forwards, appearFade 0.1s ease forwards;
   animation-delay: 0.15s;
 }
 
-.bigFourOn
-{
+.bigFourOn {
   animation: appear 0.15s ease forwards, toLeft 0.2s ease forwards, appearFade 0.1s ease forwards;
   animation-delay: 0.15s;
 }
 
-@keyframes appear
-{
-  100%
-  {
-    transform: scale(1,1);
+@keyframes appear {
+  100% {
+    transform: scale(1, 1);
   }
 }
 
-@keyframes appearFade
-{
-  100%
-  {
+@keyframes appearFade {
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes up
-{
-  0%
-  {
+@keyframes up {
+  0% {
     top: 35%;
   }
-  100%
-  {
+
+  100% {
     top: 2%;
   }
 }
 
-@keyframes toRight
-{
-  from
-  {
+@keyframes toRight {
+  from {
     right: 35%;
   }
-  to
-  {
+
+  to {
     right: 2%;
   }
 }
 
-@keyframes down
-{
-  from
-  {
+@keyframes down {
+  from {
     bottom: 35%;
   }
-  to
-  {
+
+  to {
     bottom: 2%;
   }
 }
 
-@keyframes toLeft
-{
-  from
-  {
+@keyframes toLeft {
+  from {
     left: 35%;
   }
-  to
-  {
+
+  to {
     left: 2%;
   }
 }
@@ -739,8 +641,7 @@ a
 *
 */
 /* CARD STYLING */
-#cardList
-{
+#cardList {
   position: absolute;
   width: 100%;
   top: 60px;
@@ -751,15 +652,13 @@ a
   z-index: -1;
 }
 
-#cardList li
-{
+#cardList li {
   position: relative;
   padding-left: 0;
   padding-bottom: 10px;
 }
 
-.card
-{
+.card {
   position: relative;
   margin: auto;
   background-color: #fafafa;
@@ -769,8 +668,7 @@ a
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.routineCard
-{
+.routineCard {
   height: 100px;
   width: 105%;
   margin-bottom: 10px;
@@ -780,28 +678,25 @@ a
   animation: cardAppear 0.3s ease-out forwards;
 }
 
-@keyframes cardAppear
-{
-  0%
-  {
+@keyframes cardAppear {
+  0% {
     top: 300px;
     opacity: 0;
   }
-  80%
-  {
+
+  80% {
     top: -10px;
     opacity: 1;
   }
-  100%
-  {
+
+  100% {
     top: 0;
     opacity: 1;
   }
 }
 
 /* CARD CONTENT SECTION */
-.cardInfo
-{
+.cardInfo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -811,8 +706,7 @@ a
   border-bottom-left-radius: 4px;
 }
 
-.cardInfo h3
-{
+.cardInfo h3 {
   position: relative;
   top: 0;
   left: 6%;
@@ -822,8 +716,7 @@ a
   text-overflow: ellipsis;
 }
 
-.cardInfo p
-{
+.cardInfo p {
   position: relative;
   top: 26px;
   right: 30%;
@@ -831,28 +724,24 @@ a
   text-align: right;
 }
 
-.infoIcons
-{
+.infoIcons {
   position: absolute;
   left: 4%;
   bottom: 12%;
   width: 100%;
 }
 
-.infoIcons img
-{
+.infoIcons img {
   margin-left: 6px;
 }
 
-.cardOptions
-{
+.cardOptions {
   position: absolute;
   right: 5%;
   top: 25%;
 }
 
-.optionsRipple
-{
+.optionsRipple {
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -860,20 +749,17 @@ a
   transition: background 600ms;
 }
 
-.optionsRipple:hover
-{
+.optionsRipple:hover {
   background: #fafafa radial-gradient(circle, transparent 1%, #fafafa 1%) center/15000%;
 }
 
-.optionsRipple:active
-{
-  background-color: rgba(0, 0, 0, 0.2 );
+.optionsRipple:active {
+  background-color: rgba(0, 0, 0, 0.2);
   background-size: 100%;
   transition: background 0s;
 }
 
-.cardCog
-{
+.cardCog {
   display: block;
   position: relative;
   margin: auto;
@@ -884,16 +770,14 @@ a
 * EXERCISE TYPE CARDS SECTION
 *
 */
-#exerciseContainer
-{
+#exerciseContainer {
   position: relative;
   margin: auto;
   top: 75px;
   height: 100%;
 }
 
-.exercise
-{
+.exercise {
   position: relative;
   float: left;
   width: 145px;
@@ -904,42 +788,36 @@ a
   animation: popIn 0.3s linear forwards;
 }
 
-@keyframes popIn
-{
-  0%
-  {
+@keyframes popIn {
+  0% {
     transform: scale(0, 0);
   }
-  60%
-  {
+
+  60% {
     transform: scale(1.1, 1.1);
   }
-  100%
-  {
+
+  100% {
     transform: scale(1, 1);
   }
 }
 
-.h3Container
-{
+.h3Container {
   position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-.h3Container h3
-{
+.h3Container h3 {
   font-size: 16px;
 }
 
-.exercise img
-{
+.exercise img {
   position: relative;
   top: 40px;
 }
 
-#padder
-{
+#padder {
   position: relative;
   height: 100px;
   width: 100%;
@@ -951,8 +829,7 @@ a
 *
 */
 /* EXERCISE TIMING SCREEN */
-#specifier
-{
+#specifier {
   display: none;
   position: fixed;
   top: 0;
@@ -961,38 +838,33 @@ a
   background-color: #f0f0f0;
 }
 
-#infoP
-{
+#infoP {
   position: relative;
   top: 55px;
   color: #606060;
 }
 
-#illustrate
-{
+#illustrate {
   position: relative;
   display: block;
   margin: auto;
   top: 100px;
 }
 
-#sliderPlacement
-{
+#sliderPlacement {
   position: fixed;
   width: 100%;
   top: 100px;
 }
 
-#containSliders
-{
+#containSliders {
   position: relative;
   margin: auto;
   height: 500px;
   width: 80%;
 }
 
-#containSliders p
-{
+#containSliders p {
   position: relative;
   top: 26px;
   font-size: 26px;
@@ -1000,20 +872,17 @@ a
   text-align: left;
 }
 
-#containSliderOne
-{
+#containSliderOne {
   position: absolute;
   width: 100%;
   top: 32%;
 }
 
-#containSliderOne p
-{
+#containSliderOne p {
   top: -15px;
 }
 
-#timeValue
-{
+#timeValue {
   position: relative;
   top: 158px;
   font-size: 26px;
@@ -1022,16 +891,14 @@ a
   color: #58a7dd;
 }
 
-#containSliderTwo
-{
+#containSliderTwo {
   display: block;
   position: absolute;
   width: 100%;
   top: 52%;
 }
 
-#restValue
-{
+#restValue {
   position: relative;
   bottom: 24px;
   font-size: 26px;
@@ -1040,23 +907,20 @@ a
   color: #58a7dd;
 }
 
-#addBreak p
-{
+#addBreak p {
   color: white;
   text-align: center;
   font-size: 16px;
   line-height: 10px;
 }
 
-#cancel
-{
+#cancel {
   position: absolute;
   top: 84%;
   left: 0;
 }
 
-#confirm
-{
+#confirm {
   position: absolute;
   top: 84%;
   right: 0;
@@ -1067,8 +931,7 @@ a
 *
 */
 /* OVERVIEW LIST SECTION */
-.overviewContainer
-{
+.overviewContainer {
   position: relative;
   margin: auto;
   margin-bottom: 160px;
@@ -1076,8 +939,7 @@ a
   width: 90%;
 }
 
-input[type=text]
-{
+input[type=text] {
   padding: 0;
   height: 30px;
   position: relative;
@@ -1092,8 +954,7 @@ input[type=text]
   color: #58a7dd;
 }
 
-#changeName
-{
+#changeName {
   width: 88%;
   height: 40px;
   margin-top: 15px;
@@ -1101,8 +962,7 @@ input[type=text]
   display: none;
 }
 
-#overviewTitle
-{
+#overviewTitle {
   position: relative;
   color: #58a7dd;
   text-align: center;
@@ -1116,16 +976,14 @@ input[type=text]
   text-overflow: ellipsis;
 }
 
-#overviewList
-{
+#overviewList {
   position: relative;
   margin: auto;
   text-decoration: none;
   z-index: 1;
 }
 
-.overviewList li
-{
+.overviewList li {
   display: block;
   position: relative;
   margin: auto;
@@ -1133,8 +991,7 @@ input[type=text]
   text-decoration: none;
 }
 
-.overviewCard
-{
+.overviewCard {
   position: relative;
   margin: auto;
   margin-top: 20px;
@@ -1146,16 +1003,14 @@ input[type=text]
   animation: cardAppear 0.3s ease-out forwards;
 }
 
-.overviewCardInfo
-{
+.overviewCardInfo {
   position: relative;
   width: 70%;
   height: 100%;
   text-align: left;
 }
 
-.overviewCardOptions
-{
+.overviewCardOptions {
   position: absolute;
   width: 30%;
   height: 100%;
@@ -1163,16 +1018,14 @@ input[type=text]
   top: 0;
 }
 
-.overviewCardInfo h3
-{
+.overviewCardInfo h3 {
   position: relative;
   top: 0;
   left: 6%;
   font-size: 18px;
 }
 
-.overviewCardInfo p
-{
+.overviewCardInfo p {
   position: absolute;
   color: #606060;
   left: 6%;
@@ -1180,20 +1033,17 @@ input[type=text]
   font-size: 14px;
 }
 
-#right
-{
+#right {
   right: -60px;
 }
 
-.overviewCardOptions img
-{
+.overviewCardOptions img {
   position: absolute;
   left: 35%;
   top: 35%;
 }
 
-#overviewSpecifier
-{
+#overviewSpecifier {
   display: none;
   position: fixed;
   top: 0;
@@ -1203,8 +1053,7 @@ input[type=text]
   z-index: 3;
 }
 
-#containSaveButton
-{
+#containSaveButton {
   position: absolute;
   top: 50px;
   width: 100%;
@@ -1212,24 +1061,21 @@ input[type=text]
   pointer-events: none;
 }
 
-#delete
-{
+#delete {
   position: absolute;
   top: 10px;
   right: 12%;
   pointer-events: initial;
 }
 
-#save
-{
+#save {
   position: absolute;
   bottom: -90px;
   left: 45%;
   pointer-events: initial;
 }
 
-.toDelete
-{
+.toDelete {
   -webkit-animation: fadeOut 0.5s ease-in forwards;
   -moz-animation: fadeOut 0.5s ease-in forwards;
   -o-animation: fadeOut 0.5s ease-in forwards;
@@ -1237,28 +1083,25 @@ input[type=text]
   animation: fadeOut 0.5s ease-in forwards;
 }
 
-@keyframes fadeOut
-{
-  0%
-  {
+@keyframes fadeOut {
+  0% {
     opacity: 1;
     height: 100px;
   }
-  50%
-  {
+
+  50% {
     opacity: 0;
     height: 100px;
   }
-  100%
-  {
+
+  100% {
     opacity: 0;
     height: 0;
   }
 }
 
 /* DELETE ROUTINE DIALOGUE */
-#deleteRoutine
-{
+#deleteRoutine {
   display: none;
   position: fixed;
   left: 10%;
@@ -1268,8 +1111,7 @@ input[type=text]
   z-index: 4;
 }
 
-#deleteRoutine h3
-{
+#deleteRoutine h3 {
   display: block;
   position: relative;
   text-align: center;
@@ -1280,24 +1122,21 @@ input[type=text]
   color: #d36363;
 }
 
-#confirmDelete
-{
+#confirmDelete {
   display: block;
   position: absolute;
   right: 10%;
   bottom: 10%;
 }
 
-#cancelDelete
-{
+#cancelDelete {
   display: block;
   position: absolute;
   left: 10%;
   bottom: 10%;
 }
 
-.deleteRoutine
-{
+.deleteRoutine {
   -webkit-animation: deleted 1s ease-in forwards;
   -moz-animation: deleted 1s ease-in forwards;
   -o-animation: deleted 1s ease-in forwards;
@@ -1305,20 +1144,18 @@ input[type=text]
   animation: deleted 1s ease-in forwards;
 }
 
-@keyframes deleted
-{
-  0%
-  {
+@keyframes deleted {
+  0% {
     opacity: 1;
     height: 100%;
   }
-  50%
-  {
+
+  50% {
     opacity: 0;
     height: 100%;
   }
-  100%
-  {
+
+  100% {
     opacity: 0;
     height: 0;
   }
@@ -1329,8 +1166,7 @@ input[type=text]
 *
 */
 /* GET READY SECTION */
-.getReady
-{
+.getReady {
   display: block;
   position: fixed;
   top: 0;
@@ -1340,30 +1176,26 @@ input[type=text]
   text-align: center;
 }
 
-.getReady h1
-{
+.getReady h1 {
   position: relative;
   color: #58a7dd;
   top: 70px;
 }
 
-#readyCount
-{
+#readyCount {
   position: relative;
   top: 25%;
   font-size: 150px;
 }
 
-#timeContainer
-{
+#timeContainer {
   position: fixed;
   width: 100%;
   top: 45%;
   text-align: center;
 }
 
-#displayTime
-{
+#displayTime {
   position: relative;
   font-size: 100px;
   color: #58a7dd;
@@ -1371,16 +1203,14 @@ input[type=text]
 }
 
 /* EXERCISE SECTION */
-#containTimer
-{
+#containTimer {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 5px;
 }
 
-#exerciseLabel
-{
+#exerciseLabel {
   position: relative;
   text-align: center;
   top: 60px;
@@ -1388,45 +1218,39 @@ input[type=text]
   color: #58a7dd;
 }
 
-#timerImage
-{
+#timerImage {
   position: fixed;
   top: 150px;
   width: 100%;
   display: none;
 }
 
-#timerImage img
-{
+#timerImage img {
   position: relative;
   display: block;
   margin: auto;
 }
 
-#exerciseImage
-{
+#exerciseImage {
   position: fixed;
   top: 200px;
   width: 100%;
   display: block;
 }
 
-#exerciseImage img
-{
+#exerciseImage img {
   position: relative;
   display: block;
   margin: auto;
 }
 
-#counterWrapper
-{
+#counterWrapper {
   position: absolute;
   top: 50%;
   width: 100%;
 }
 
-#exerciseCounter
-{
+#exerciseCounter {
   position: relative;
   margin: auto;
   text-align: center;
@@ -1434,20 +1258,17 @@ input[type=text]
   color: #606060;
 }
 
-#muteIt
-{
+#muteIt {
   position: fixed;
   bottom: 18%;
   left: 9%;
 }
 
-#muteIt img
-{
+#muteIt img {
   position: relative;
 }
 
-#pauseButton
-{
+#pauseButton {
   display: none;
   position: fixed;
   left: 56%;
@@ -1456,8 +1277,7 @@ input[type=text]
   transform: translateX(-45px);
 }
 
-#skipIt
-{
+#skipIt {
   position: fixed;
   right: 8%;
   bottom: 6%;
@@ -1465,8 +1285,7 @@ input[type=text]
 }
 
 /* PAUSE SCREEN SECTION */
-#containPauseScreen
-{
+#containPauseScreen {
   display: none;
   position: relative;
   top: 110px;
@@ -1477,37 +1296,32 @@ input[type=text]
   z-index: 3;
 }
 
-#containPauseScreen h1
-{
+#containPauseScreen h1 {
   font-size: 50px;
   color: #58a7dd;
 }
 
-#changeItContainer
-{
+#changeItContainer {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
 
-#resumeItContainer
-{
+#resumeItContainer {
   position: relative;
   margin: auto;
   width: 50%;
   top: 36px;
 }
 
-#finishItContainer
-{
+#finishItContainer {
   position: absolute;
   right: 20px;
   bottom: 24px;
 }
 
 /* END OF ROUTINE SECTION */
-#feedbackScreen
-{
+#feedbackScreen {
   display: none;
   position: fixed;
   top: 0;
@@ -1517,79 +1331,68 @@ input[type=text]
   text-align: center;
 }
 
-#feedbackScreen h1
-{
+#feedbackScreen h1 {
   position: relative;
   top: 50px;
   font-size: 45px;
 }
 
-#feedbackScreen p
-{
+#feedbackScreen p {
   position: relative;
   top: 30px;
   color: #606060;
 }
 
-#feedbackSliderContainer
-{
+#feedbackSliderContainer {
   position: relative;
   top: 40px;
   margin: auto;
   width: 80%;
 }
 
-#feedbackOne
-{
+#feedbackOne {
   position: relative;
   top: 0;
   color: #58a7dd;
 }
 
-#feedbackTwo
-{
+#feedbackTwo {
   position: relative;
   top: 55px;
   color: #58a7dd;
 }
 
-#feedbackFirst
-{
+#feedbackFirst {
   position: relative;
   top: 30px;
   width: 100%;
 }
 
-#feedbackSecond
-{
+#feedbackSecond {
   position: relative;
   top: 85px;
   width: 100%;
 }
 
-.easy
-{
+.easy {
   position: relative;
   top: 10px;
   text-align: left;
 }
 
-.hard
-{
+.hard {
   position: relative;
   top: -12px;
   text-align: right;
 }
 
-#replayWorkout
-{
+#replayWorkout {
   position: fixed;
   bottom: 17%;
   left: 11%;
 }
 
-#submitFeedback
-{
+#submitFeedback {
   position: relative;
   margin: auto;
   width: 50px;
@@ -1597,8 +1400,7 @@ input[type=text]
   bottom: -90px;
 }
 
-#skipFeedback
-{
+#skipFeedback {
   position: fixed;
   bottom: 18%;
   right: 11%;
@@ -1609,50 +1411,43 @@ input[type=text]
 *
 */
 /* ICONS SECTION */
-#containProfileButtons
-{
+#containProfileButtons {
   position: fixed;
   width: 100%;
   height: 100%;
 }
 
-#containProfileButtons p
-{
+#containProfileButtons p {
   position: relative;
   text-align: center;
   color: #58a7dd;
 }
 
-#showChart
-{
+#showChart {
   position: fixed;
   width: 100%;
   top: 12%;
   cursor: pointer;
 }
 
-#showChart img
-{
+#showChart img {
   display: block;
   margin: auto;
 }
 
-#showCalendar
-{
+#showCalendar {
   position: absolute;
   width: 100%;
   bottom: 12%;
   cursor: pointer;
 }
 
-#showCalendar img
-{
+#showCalendar img {
   display: block;
   margin: auto;
 }
 
-#theLine
-{
+#theLine {
   position: relative;
   width: 100%;
   height: 1px;
@@ -1661,8 +1456,7 @@ input[type=text]
 }
 
 /* CHART SECTION */
-#containChart
-{
+#containChart {
   display: none;
   position: fixed;
   width: 100%;
@@ -1670,66 +1464,58 @@ input[type=text]
   background-color: #f0f0f0;
 }
 
-#theChart
-{
+#theChart {
   position: absolute;
   top: 70px;
 }
 
-#yAxisInfo
-{
+#yAxisInfo {
   position: relative;
   width: 10%;
   height: 100%;
   background-color: #f0f0f0;
 }
 
-#yAxisInfo p
-{
+#yAxisInfo p {
   font-size: 10px;
   color: #58a7dd;
 }
 
-#ay
-{
-  position: absolute;;
+#ay {
+  position: absolute;
+  ;
   top: 90px;
   left: 5%;
 }
 
-#by
-{
+#by {
   position: absolute;
   top: 24%;
   left: 5%;
 }
 
-#cy
-{
+#cy {
   position: absolute;
   top: 33%;
   left: 5%;
   text-align: right;
 }
 
-#dy
-{
+#dy {
   position: absolute;
   top: 44%;
   left: 10%;
   text-align: left;
 }
 
-#ey
-{
+#ey {
   position: absolute;
   top: 61%;
   left: 5%;
 }
 
 /* CHART OPTIONS SECTION */
-#chartOptionsDialogue
-{
+#chartOptionsDialogue {
   display: none;
   position: fixed;
   left: 10%;
@@ -1739,15 +1525,13 @@ input[type=text]
   z-index: 4;
 }
 
-#chartOptionsDialogue h3
-{
+#chartOptionsDialogue h3 {
   position: relative;
   color: #58a7dd;
   margin: 10px 0 0 20px;
 }
 
-#chartOptionsDialogue input
-{
+#chartOptionsDialogue input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1763,8 +1547,7 @@ input[type=text]
   top: 20px;
 }
 
-#chartOptionsDialogue p
-{
+#chartOptionsDialogue p {
   position: relative;
   font-weight: bold;
   color: #606060;
@@ -1774,21 +1557,18 @@ input[type=text]
   line-height: 0;
 }
 
-#chartOptionsDialogue input:checked
-{
+#chartOptionsDialogue input:checked {
   border: 10px solid #6eadea;
 }
 
-#confirmSettings
-{
+#confirmSettings {
   position: absolute;
   left: 43%;
   bottom: 5%;
 }
 
 /* CALENDAR SECTION */
-#containCalendar
-{
+#containCalendar {
   display: none;
   position: fixed;
   width: 100%;
@@ -1796,8 +1576,7 @@ input[type=text]
   background-color: #f0f0f0;
 }
 
-#containCalendar h1
-{
+#containCalendar h1 {
   position: relative;
   top: 60px;
   font-size: 30px;
@@ -1805,15 +1584,13 @@ input[type=text]
   color: #58a7dd;
 }
 
-#content
-{
+#content {
   position: relative;
   top: 6%;
   text-align: center;
 }
 
-#getEvents
-{
+#getEvents {
   display: block;
   position: absolute;
   top: 60%;
@@ -1827,8 +1604,7 @@ input[type=text]
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#getEvents:active
-{
+#getEvents:active {
   -webkit-transform: translate(3px, 3px);
   -moz-transform: translate(3px, 3px);
   -o-transform: translate(3px, 3px);
@@ -1837,16 +1613,14 @@ input[type=text]
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-#getEvents p
-{
+#getEvents p {
   color: white;
   text-align: center;
   font-size: 16px;
   line-height: 26px;
 }
 
-#signOut
-{
+#signOut {
   display: none;
   position: absolute;
   top: 60%;
@@ -1860,8 +1634,7 @@ input[type=text]
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#signOut:active
-{
+#signOut:active {
   -webkit-transform: translate(3px, 3px);
   -moz-transform: translate(3px, 3px);
   -o-transform: translate(3px, 3px);
@@ -1870,16 +1643,14 @@ input[type=text]
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-#signOut p
-{
+#signOut p {
   color: white;
   text-align: center;
   font-size: 16px;
   line-height: 26px;
 }
 
-#closeCalendar
-{
+#closeCalendar {
   position: absolute;
   left: 8%;
   bottom: 15%;
@@ -1890,8 +1661,7 @@ input[type=text]
 *
 */
 /* DIALOGUE/MENU OVERLAY */
-.block
-{
+.block {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1903,8 +1673,7 @@ input[type=text]
 }
 
 /* BURGER MENU SECTION */
-.burgerMenu
-{
+.burgerMenu {
   position: relative;
   margin: auto;
   top: 5px;
@@ -1913,8 +1682,7 @@ input[type=text]
   border-radius: 50%;
 }
 
-.tap
-{
+.tap {
   position: relative;
   margin: auto;
   height: 24px;
@@ -1926,15 +1694,13 @@ input[type=text]
 }
 
 /* NAVIGATION BUTTONS SECTION */
-#navContainer
-{
+#navContainer {
   position: relative;
   margin: auto;
   width: 50px;
 }
 
-#grayOne
-{
+#grayOne {
   display: block;
   position: relative;
   margin: auto;
@@ -1942,26 +1708,22 @@ input[type=text]
   left: -1px;
 }
 
-#navOne img:last-child
-{
+#navOne img:last-child {
   display: none;
 }
 
-#navOne:hover img:first-child
-{
+#navOne:hover img:first-child {
   display: none;
 }
 
-#navOne:hover img:last-child
-{
+#navOne:hover img:last-child {
   display: block;
   position: relative;
   margin: auto;
   top: 38%;
 }
 
-#grayTwo
-{
+#grayTwo {
   display: block;
   position: relative;
   margin: auto;
@@ -1969,26 +1731,22 @@ input[type=text]
   left: -0.5px;
 }
 
-#navTwo img:last-child
-{
+#navTwo img:last-child {
   display: none;
 }
 
-#navTwo:hover img:first-child
-{
+#navTwo:hover img:first-child {
   display: none;
 }
 
-#navTwo:hover img:last-child
-{
+#navTwo:hover img:last-child {
   display: block;
   position: relative;
   margin: auto;
   top: 22%;
 }
 
-#grayThree
-{
+#grayThree {
   display: block;
   position: relative;
   margin: auto;
@@ -1996,31 +1754,28 @@ input[type=text]
   left: 0;
 }
 
-#navThree img:last-child
-{
+#navThree img:last-child {
   display: none;
 }
 
-#navThree:hover img:first-child
-{
+#navThree:hover img:first-child {
   display: none;
 }
 
-#navThree:hover img:last-child
-{
+#navThree:hover img:last-child {
   display: block;
   position: relative;
   margin: auto;
   top: 22%;
 }
 
-.sml
-{
+.sml {
   transform: scale(0);
 }
 
-#navOne, #navTwo, #navThree
-{
+#navOne,
+#navTwo,
+#navThree {
   position: absolute;
   display: block;
   border: 2px solid #58a7dd;
@@ -2033,8 +1788,7 @@ input[type=text]
   left: -2px;
 }
 
-.testOne #navOne:hover
-{
+.testOne #navOne:hover {
   background-color: #6eadea;
   border: none;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -2045,8 +1799,7 @@ input[type=text]
   animation: whopL 0.1s ease forwards;
 }
 
-.testTwo #navTwo:hover
-{
+.testTwo #navTwo:hover {
   background-color: #6eadea;
   border: none;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -2057,8 +1810,7 @@ input[type=text]
   animation: whopC 0.1s ease forwards;
 }
 
-.testThree #navThree:hover
-{
+.testThree #navThree:hover {
   background-color: #6eadea;
   border: none;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -2069,29 +1821,25 @@ input[type=text]
   animation: whopR 0.1s ease forwards;
 }
 
-#workouts
-{
+#workouts {
   position: absolute;
   bottom: 10px;
   left: -60px;
 }
 
-#home
-{
+#home {
   position: absolute;
   bottom: 50px;
 }
 
-#profile
-{
+#profile {
   position: absolute;
   bottom: 10px;
   left: 60px;
 }
 
 /* NAVIGATION BUTTONS ANIMATIONS SECTION */
-.smlOnOne
-{
+.smlOnOne {
   -webkit-animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
   -moz-animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
   -o-animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
@@ -2099,8 +1847,7 @@ input[type=text]
   animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
 }
 
-.smlOnTwo
-{
+.smlOnTwo {
   -webkit-animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
   -moz-animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
   -o-animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
@@ -2108,8 +1855,7 @@ input[type=text]
   animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
 }
 
-.smlOnThree
-{
+.smlOnThree {
   -webkit-animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
   -moz-animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
   -o-animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
@@ -2117,88 +1863,74 @@ input[type=text]
   animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
 }
 
-@keyframes pop
-{
-  100%
-  {
-    transform: scale(1,1);
+@keyframes pop {
+  100% {
+    transform: scale(1, 1);
   }
 }
 
-@keyframes slideOne
-{
-  0%
-  {
+@keyframes slideOne {
+  0% {
     bottom: 30px;
     left: 20px;
   }
-  100%
-  {
+
+  100% {
     bottom: 70px;
     left: -47px;
   }
 }
 
-@keyframes slideTwo
-{
-  0%
-  {
+@keyframes slideTwo {
+  0% {
     bottom: 40px;
     left: 25px;
   }
-  100%
-  {
+
+  100% {
     bottom: 103px;
     left: 2px;
   }
 }
 
-@keyframes slideThree
-{
-  0%
-  {
+@keyframes slideThree {
+  0% {
     bottom: 30px;
     left: 25px;
   }
-  100%
-  {
+
+  100% {
     bottom: 70px;
     left: 50px;
   }
 }
 
-@keyframes whopL
-{
-  0%
-  {
-    transform: scale(1,1) translateY(0px) translateX(0px);
+@keyframes whopL {
+  0% {
+    transform: scale(1, 1) translateY(0px) translateX(0px);
   }
-  100%
-  {
+
+  100% {
     transform: scale(1.5) translateY(-10px) translateX(-10px);
   }
 }
 
-@keyframes whopC
-{
-  0%
-  {
-    transform: scale(1,1) translateY(0px) translateX(0px);
+@keyframes whopC {
+  0% {
+    transform: scale(1, 1) translateY(0px) translateX(0px);
   }
-  100%
-  {
+
+  100% {
     transform: scale(1.5) translateY(-10px);
   }
 }
 
-@keyframes whopR
-{
-  0%
-  {
-    transform: scale(1,1) translateY(0px) translateX(0px);
+@keyframes whopR {
+  0% {
+    transform: scale(1, 1) translateY(0px) translateX(0px);
   }
-  100%
-  {
+
+  100% {
     transform: scale(1.5) translateY(-10px) translateX(10px);
   }
 }
@@ -2208,8 +1940,7 @@ input[type=text]
 *
 */
 /* WAITING FOR PAGE TO LOAD */
-#loading
-{
+#loading {
   display: block;
   position: fixed;
   top: 0;
@@ -2219,15 +1950,13 @@ input[type=text]
   text-align: center;
 }
 
-#loadingSquare
-{
+#loadingSquare {
   position: relative;
   top: 230px;
   width: 35%;
 }
 
-.pulsate
-{
+.pulsate {
   position: absolute;
   top: 0;
   left: 0;
@@ -2239,20 +1968,17 @@ input[type=text]
   animation: pulse 1s linear infinite;
 }
 
-.pulsate img
-{
+.pulsate img {
   width: 100%;
 }
 
-.spin
-{
+.spin {
   position: absolute;
   top: 30%;
   left: 45%;
 }
 
-.spin img
-{
+.spin img {
   width: 21%;
   -webkit-animation: spinning 1s linear infinite;
   -moz-animation: spinning 1s linear infinite;
@@ -2261,8 +1987,7 @@ input[type=text]
   animation: spinning 1s linear infinite;
 }
 
-#progress
-{
+#progress {
   position: absolute;
   top: 150%;
   width: 100%;
@@ -2270,8 +1995,7 @@ input[type=text]
   background-color: #e0e0e0;
 }
 
-#progressBar
-{
+#progressBar {
   width: 1%;
   height: 20px;
   border-radius: 12px;
@@ -2281,34 +2005,30 @@ input[type=text]
   color: white;
 }
 
-@keyframes pulse
-{
-  0%
-  {
+@keyframes pulse {
+  0% {
     transform: scale(1);
   }
-  50%
-  {
+
+  50% {
     transform: scale(1.2);
   }
-  100%
-  {
+
+  100% {
     transform: scale(1);
   }
 }
 
-@keyframes spinning
-{
-  0%
-  {
+@keyframes spinning {
+  0% {
     transform: rotate(0deg);
   }
-  50%
-  {
+
+  50% {
     transform: rotate(180deg);
   }
-  100%
-  {
+
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -2318,8 +2038,7 @@ input[type=text]
 *
 */
 /* WARNING USER TO STAY IN PORTRAIT MODE */
-#warning
-{
+#warning {
   position: fixed;
   top: 0;
   height: 100%;
@@ -2330,8 +2049,7 @@ input[type=text]
   display: none;
 }
 
-.imageSpinner
-{
+.imageSpinner {
   position: relative;
   top: 26%;
   -webkit-animation: spin 1.5s ease infinite;
@@ -2341,26 +2059,22 @@ input[type=text]
   animation: spin 1.5s ease infinite;
 }
 
-@keyframes spin
-{
-  0%
-  {
+@keyframes spin {
+  0% {
     transform: rotate(-90deg);
   }
-  50%
-  {
+
+  50% {
     transform: rotate(0deg);
   }
-  100%
-  {
+
+  100% {
     transform: rotate(0deg);
   }
 }
 
-@media (min-width: 500px)
-{
-  #warning
-  {
+@media (min-width: 500px) {
+  #warning {
     display: block;
   }
 }

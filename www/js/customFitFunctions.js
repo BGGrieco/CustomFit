@@ -1,4 +1,3 @@
-
 if (typeof cordova !== "undefined") {
   document.addEventListener("deviceready", onDeviceReady, false);
 } else {
@@ -21,8 +20,7 @@ function onDeviceReady() {
       $(".block").css("z-index", new_z_index); // 1 or 3
     } else if ($(".block").css("z-index") != new_z_index) {
       $(".block").css("z-index", new_z_index);
-    }
-    else if ($(".block").css("z-index") == "3" && $(".tab").is(":visible")) {
+    } else if ($(".block").css("z-index") == "3" && $(".tab").is(":visible")) {
       $(".block").css("z-index", "1");
     } else if ($(".block").css("z-index") == "3" && $(".tab").is(":hidden")) {
       //$(".block").css("display", "none");
@@ -117,14 +115,14 @@ function onDeviceReady() {
 
   function displayChart() {
     var condition = localStorage.quickAccess;
-    if(condition === "true") {
+    if (condition === "true") {
       $("#containChart").css("display", "block");
     }
   }
 
   function manageButton() {
     var condition = localStorage.quickAccess;
-    if(condition === "true") {
+    if (condition === "true") {
       $("#closeChart").attr("href", "index.html");
     } else {
       $("#containChart").css("display", "none");
